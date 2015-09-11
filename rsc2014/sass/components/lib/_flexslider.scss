@@ -113,3 +113,8 @@
     @include flexslider-classes;
   }
 }
+
+// slider node pages
+.node-type-rsc-slider-content #page-title-area {
+  display: none;
+}
