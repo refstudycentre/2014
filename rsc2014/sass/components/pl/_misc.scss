@@ -1,0 +1,145 @@
+#header {
+  #site-name,
+  .header__logo {
+    display: none;
+  }
+  padding: 0;
+  img {
+    vertical-align:top;
+  }
+}
+
+#page {
+  overflow: hidden;
+}
+
+#page,
+.region-bottom {
+  max-width: $t4;
+}
+
+#page-title-area {
+  display: none; // hide the title
+}
+
+// buttons
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button:link,
+a.button:visited {
+  color: $color_text;
+  white-space: nowrap;
+  padding: rhythm(0.25) $indent-amount-small;
+  margin: rhythm(0.25) 0;
+}
+
+a.button {
+  line-height: rhythm(2);
+}
+
+/* panels layout fixes*/
+
+// top margin in all panes
+.panel-pane {
+  p:first-child,
+  h2:first-child {
+    margin-top: 0;
+  }
+}
+
+// padding of rows
+.row {
+  padding-bottom: 0;
+}
+
+// panels 2-column layouts
+.panel-2col {
+  
+  // adjust margins
+  .panel-col-last .inside {
+    margin: 0 0 0 $indent-amount-small;
+  }
+  .panel-col-first .inside {
+    margin: 0 $indent-amount-small 0 0;
+    padding-right: $indent-amount;
+    border-right: 1px solid $c1;
+  }
+  
+  // make panels-columns responsive
+  @media all and (max-width: ($t8 - 1)) {
+    .panel-col-first,
+    .panel-col-last {
+      float: none;
+      width: 100%;
+      .inside {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .panel-col-first {
+      border-bottom: 1px solid $c1;
+      padding-bottom: rhythm(1);
+    }
+  }
+  
+}
+
+// list of available documents
+.view-pl-docs {
+  .item-list > ul{
+    padding-left: 0;
+    li {
+      list-style-position: inside;
+      padding-left: $indent-amount;
+    }
+  }
+  .views-field-field-private-attachment {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: inline;
+    }
+    li {
+      display: inline-block;
+      padding-left: $indent-amount;
+      img {
+        width: auto;
+        height: rhythm(1);
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+/**
+ *  PL-Front page specifics
+ */
+.section-pl {  
+  .panel-flexible-inside .join {
+    text-align: right;
+  }
+  
+  // make front page (panels builder) responsive  
+  @media all and (max-width: ($t8 - 1)) {
+    .panel-flexible-inside > div {
+      margin-left: 0;
+    }
+    .panel-flexible-inside > div > .col-first {
+      margin: 0 auto;
+      float: none;
+      width: auto;
+      max-width: 250px;
+    }
+  }
+  
+  @media all and (max-width: ($t10 - 1)), all and (min-width: $t8) and (max-width: ($t6 - 1px)) {
+    .panel-flexible-inside .col-last .row-last .col {
+      float: none;
+      width: 100%;
+    }
+  }
+}

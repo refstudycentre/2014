@@ -1,0 +1,68 @@
+.block-rsc-library {
+
+  article.node-rsc-library-article,
+  article.node-rsc-library-audio {
+    
+    span.field-name-field-featured-image, // CL
+    span.field-image // RC TODO: shouldn't this be field-name-image ?
+    {
+      a {
+        border: 1px solid $bluegrey4;
+        margin-top: -2px; // compensate for border
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        overflow: hidden; // The vertical rhythm is fixed in JS... :)
+        
+        img {
+          display: block;
+        }
+      }
+    }
+    
+    a {
+      text-indent: 0;
+      margin-left: 0;
+    }
+    
+    ul.article-info {
+      padding: 0;
+      margin: 0;
+      
+      li {
+        list-style-type: none;
+        display: block;
+        padding: 0;
+        border: none;
+        text-align: right;
+        a {
+          display: inline-block;
+        }
+      }
+      
+      li.first {
+        text-transform: uppercase;
+        color: $orange6;
+        font-weight: bold;
+        a {
+          color: $orange6;
+        }
+      }
+    }
+    
+  }
+  
+}
+
+#block-rsc-library-feat-cat,
+#block-rsc-library-new-node {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      margin-left: $indent-amount-small;
+      text-indent: $indent-amount-small*-1;
+      display: block;
+    }
+  }
+}

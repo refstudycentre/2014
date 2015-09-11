@@ -1,0 +1,120 @@
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+ul.rsc-taxonomy-menu,
+ul.rsc-taxonomy-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.rsc-taxonomy-menu li {
+  float: left; /* LTR */
+}
+
+ul.rsc-taxonomy-menu li:hover {
+  background-color: $bluegrey4;
+}
+
+ul.rsc-taxonomy-menu ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  border: 1px solid $bluegrey4;
+  margin-right: 0; /* LTR */
+  background-color: $color_bg;
+}
+
+ul.rsc-taxonomy-menu ul li {
+  width: 12.5em;
+}
+
+
+.block-rsc-taxonomy-menus,
+#block-rsc-cl-library-menu {
+  z-index: 10;
+}
+
+ul.rsc-taxonomy-menu,
+ul.rsc-taxonomy-menu ul {
+  z-index: 5;
+  position: relative;
+}
+
+ul.rsc-taxonomy-menu li {
+  position: relative;
+}
+
+ul.rsc-taxonomy-menu a {
+  display: block;
+  padding: 0 5px;
+}
+
+ul.rsc-taxonomy-menu ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+ul.rsc-taxonomy-menu li.over ul {
+  visibility: visible;
+}
+
+ul.rsc-taxonomy-menu ul li {
+  display: block;
+}
+
+ul.rsc-taxonomy-menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Show submenus when over their parents. */
+ul.rsc-taxonomy-menu li:hover ul,
+ul.rsc-taxonomy-menu li.menuparent li:hover ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li:hover ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li.menuparent li:hover ul,
+ul.rsc-taxonomy-menu li.over ul,
+ul.rsc-taxonomy-menu li.menuparent li.over ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li.over ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li.menuparent li.over ul {
+  visibility: visible;
+}
+
+/* Hide sub-menus initially. */
+ul.rsc-taxonomy-menu li:hover ul ul,
+ul.rsc-taxonomy-menu li:hover ul ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover ul ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover li:hover ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover li:hover ul ul ul,
+ul.rsc-taxonomy-menu li.over ul ul,
+ul.rsc-taxonomy-menu li.over ul ul ul,
+ul.rsc-taxonomy-menu li.over li.over ul ul,
+ul.rsc-taxonomy-menu li.over li.over ul ul ul,
+ul.rsc-taxonomy-menu li.over li.over li.over ul ul,
+ul.rsc-taxonomy-menu li.over li.over li.over ul ul ul {
+  visibility: hidden;
+}
+
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+
+// moved to _mixins
+.region-sidebar-first {
+  // let the rsc-taxonomy-menu pop right
+  @include rsc-taxonomy-menu-right();
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+// moved to _mixins
+.region-sidebar-second {
+  // let the rsc-taxonomy-menu pop left
+  @include rsc-taxonomy-menu-left();
+}

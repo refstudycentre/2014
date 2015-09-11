@@ -1,0 +1,170 @@
+/**
+ * Typography & Vertical rhythm
+ */
+
+p,
+pre {
+  margin: rhythm(1) 0;
+}
+blockquote {
+  margin: rhythm(1) $indent-amount;
+}
+
+h1 {
+  font-weight: 500;
+  @include adjust-font-size-to( $h1-font-size );
+  @include leader(1, $h1-font-size);
+  @include trailer(1, $h1-font-size);
+}
+h2 {
+  font-weight: 400;
+  @include adjust-font-size-to( $h2-font-size);
+  @include leader(1, $h2-font-size);
+  @include trailer(1, $h2-font-size);
+}
+h3 {
+  font-weight: 300;
+  @include adjust-font-size-to( $h3-font-size );
+  @include leader(1, $h3-font-size);
+  @include trailer(1, $h3-font-size);
+}
+h4 {
+  font-weight: 200;
+  @include adjust-font-size-to( $h4-font-size );
+  @include leader(1, $h4-font-size);
+  @include trailer(1, $h4-font-size);
+}
+h5 {
+  font-weight: 100;
+  @include adjust-font-size-to( $h5-font-size );
+  @include leader(1, $h5-font-size);
+  @include trailer(1, $h5-font-size);
+}
+h6 {
+  font-weight: 100;
+  @include adjust-font-size-to( $h6-font-size );
+  @include leader(1, $h6-font-size);
+  @include trailer(1, $h6-font-size);
+}
+
+/* Sidebar typography */
+$s0: $sidebar-font-size-relative*$base_font_size;
+$s1: $sidebar-font-size-relative*$h1-font-size;
+$s2: $sidebar-font-size-relative*$h2-font-size;
+$s3: $sidebar-font-size-relative*$h3-font-size;
+$s4: $sidebar-font-size-relative*$h4-font-size;
+$s5: $sidebar-font-size-relative*$h5-font-size;
+$s6: $sidebar-font-size-relative*$h6-font-size;
+
+.sidebar, #header, nav.breadcrumb {
+  
+  @include adjust-font-size-to($s0);
+  font-family: $font-sidebar;
+  
+  h1 {
+    @include adjust-font-size-to($s1,2,$s0);
+  }
+  h2 {
+    @include adjust-font-size-to($s2,2,$s0);
+  }
+  h3 {
+    @include adjust-font-size-to($s3,1,$s0);
+  }
+  h4 {
+    @include adjust-font-size-to($s4,1,$s0);
+  }
+  h5 {
+    @include adjust-font-size-to($s5,1,$s0);
+  }
+  h6 {
+    @include adjust-font-size-to($s6,1,$s0);
+  }
+  
+}
+
+.sidebar {
+  
+  @media all and (min-width: $t4) { // separate sidebars
+    @include leader(2,$s0);
+  }
+  @media all and (min-width: $t10) and (max-width: ($t4 - 1px)) { // combined sidebar
+    @include leader(1,$s0);
+  }
+  
+  .block, article { @include trailer(1,$s0); }
+  
+}
+
+#header {
+  @include trailer(1,$s0);
+  padding: 0;
+  .header__logo-image {
+
+    height: rhythm(3,$s0); // strict 3-line height
+
+    @media all and (max-width: ($t10 - 1)) {
+      // no sidebars, small screen
+      // allow resizing the logo
+      max-height: rhythm(3,$s0);
+      height: auto;
+    }
+  }
+  #block-search-form {
+    @include adjust-font-size-to($search-font-size,2,$s0);
+  }
+  .block-menu {
+    @include adjust-font-size-to($s0,2,$s0);
+  }
+  .header__logo-image {
+    margin-top: rhythm(1,$s0);
+    margin-bottom: rhythm(1,$s0);
+  }
+}
+
+.front,
+.page-search {
+  #header {
+    .header__logo-image {
+      margin-top: rhythm(1,$s0);
+      margin-bottom: 0;
+    }
+    #block-search-form {
+      @include rhythm(1,1,1,0,$search-font-size);
+      input.form-submit,
+      input.form-text {
+        @include rhythm(0,0.25,0.25,0,$search-font-size);
+      }
+    }
+  }
+}
+
+#page-title-area {
+  // use margin, not padding, to include margins of content
+  padding-top: rhythm(0.5);
+  padding-bottom: rhythm(0.5);
+}
+
+#content {
+  // use margin, not padding, to include margins of content
+  margin-top: rhythm(1);
+  margin-bottom: rhythm(1); 
+}
+
+#content_mid_left,
+#content_mid_right {
+  margin-top: 0;                // because the vertical margins of these floated elements will not collapse
+  margin-bottom: - rhythm(0.5); // -0.5 to compensate for the 0.5 bottom margin of the last .block contained in this div, whose margin wil not collapse
+}
+#content_lower {
+  margin: rhythm(1) 0;
+}
+#content_mids_wrapper {
+  margin: rhythm(1) 0;
+  overflow: hidden; // for float containment
+}
+
+#footer {
+  @include zen-clear(); // Footer spans the width of the site, below all other content, on all layouts
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1);
+}

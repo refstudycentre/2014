@@ -1,0 +1,40 @@
+
+// Paragraph citations
+#block-rsc-cite-paragraph,
+.node-rsc-cite-paragraph {
+  .field-name-rscc-author-authors {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-family: $base-font-family;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+// Short citations
+#block-rsc-cite-short,
+.node-rsc-cite-short {
+  text-align: center;
+  padding: rhythm(1) $zen-gutter-width/2;
+  .field-name-rscc-body {
+    @include quote-text;
+  }
+  .field-name-rscc-author-authors {
+    @include quote-author;
+  }
+  .field-name-rscc-author-authors:before {
+    content: "\0000A0 \002014 \0000A0";
+  }
+}
+
+.node-type-rsc-cite-short #page-title-area {
+  display: none; // hide the title area; there is no title
+}
+
+#block-rsc-cite-short {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+

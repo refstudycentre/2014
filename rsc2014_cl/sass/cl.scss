@@ -1,0 +1,12 @@
+
+// Bible study page:
+.section-study {
+  #midcol #block-menu-menu-bible-study ul {
+    margin: 0;
+  }
+  // undo the horrors of clearfix:
+  article.clearfix:after {
+    content: none;
+  }
+}
+

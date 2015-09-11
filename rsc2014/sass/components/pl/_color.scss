@@ -1,0 +1,47 @@
+/**
+ * Colors
+ */
+html {
+  // default text
+  color: $color_text;
+  
+  a:link,
+  a:visited {
+    color: $color_text_em;
+  }
+
+  // Links inside titles
+  h1, h2, h3, h4, h5, h6 {
+    color: $color_text_em;
+    a:link,
+    a:visited {
+      color: $color_text_em;
+    }
+  }
+  
+  // site background (looks like the sidebars' background color against the white content)
+  background-color: $color_bg;
+  
+  #page {
+    // content background
+    background-color: white;
+  }
+  #footer {
+    background-color: $color_bg;
+    color: white;
+  }
+  #page-title-area {
+    background-color: $color_bg;
+    #page-title {
+      color: white;
+    }
+    color: white;
+    div.messages {
+      border-color: white;
+    }
+  }
+}
+
+fieldset {
+  border-color: $color_border;
+}

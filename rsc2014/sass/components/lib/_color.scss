@@ -1,0 +1,68 @@
+/**
+ * Colors
+ */
+html {
+  // default text
+  color: $color_text;
+  
+  a:link,
+  a:visited {
+    color: $blue6;
+  }
+  
+  .sidebars {
+    color: $color_side;
+    a:link,
+    a:visited {
+      color: $color_side;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: $blue6;
+      a:link,
+      a:visited {
+        color: $blue6;
+      }
+    }
+  }
+
+  // Links inside titles
+  h1, h2, h3, h4, h5, h6 {
+    color: $blue6;
+    a:link,
+    a:visited {
+      color: $blue6;
+    }
+  }
+  
+  // site background (looks like the sidebars' background color against the white content)
+  background-color: $color_bg;
+  
+  #midcol {
+    // content background
+    background-color: white;
+    border-color: $bluegrey4;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+  }
+  #footer {
+    background-color: $blue6;
+    color: white;
+    a:link,
+    a:visited {
+      color: white;
+    }
+  }
+  #page-title-area {
+    background-color: $blue6;
+    #page-title {
+      color: white;
+    }
+    div.messages {
+      border-color: white;
+    }
+  }
+}
+
+fieldset {
+  border-color: $bluegrey4;
+}

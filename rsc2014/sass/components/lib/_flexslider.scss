@@ -1,0 +1,115 @@
+
+// Flexslider classes
+@mixin flexslider-classes {
+  .fs-33 {
+    @media all and (max-width: ($t8 - 1)) {
+      max-width: none;
+    }
+    @media all and (min-width: $t8) and (max-width: ($t4 - 1px)) {
+      max-width: 50%;
+    }
+    @media all and (min-width: $t4) {
+      max-width: 33%;
+    }
+  }
+  .fs-50 {
+    @media all and (max-width: ($t8 - 1)) {
+      max-width: none;
+    }
+    @media all and (min-width: $t8) and (max-width: ($t4 - 1px)) {
+      max-width: 75%;
+    }
+    @media all and (min-width: $t4) {
+      max-width: 50%;
+    }
+  }
+  .fs-right {
+    margin-left: auto;
+  }
+  .fs-left {
+    margin-right: auto;
+  }
+  .fs-hcenter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fs-box1 {
+    background-color: $bluegrey2; // fallback first
+    background-color: $bluegrey2_75; // newer browsers
+    border-radius: $indent-amount-small;
+    padding: $indent-amount-small;
+  }
+  .fs-box2 {
+    background-color: $blue6; // fallback first
+    background-color: $blue6_75; // newer browsers
+    border-radius: $indent-amount-small;
+    padding: $indent-amount-small;
+  }
+  .fs-box3 {
+    background-color: $blue6; // fallback first
+    background-color: $blue6_75; // newer browsers
+    border-radius: $indent-amount-small;
+    border: 2px solid $orange6;
+    padding: $indent-amount-small;
+  }
+}
+
+// Flexslider
+#block-views-rsc-slider-view-block {
+  display: none; // this will be overridden by js
+  overflow: visible; // TODO: can this be removed?
+  
+  // maintain vertical rhythm of page:
+  height: rhythm(12);
+  margin-bottom: rhythm(1)*-1;
+  
+}
+
+.flexslider {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: rhythm(1);
+  ul.slides {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0 4px 4px 4px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  .flex-control-nav {
+    bottom: - rhythm(1);
+    li {
+      vertical-align: bottom;
+    }
+  }
+  .flex-direction-nav {
+    line-height: normal;
+  }
+  img {
+    border-radius: 2px;
+    border: 1px solid $bluegrey2;
+  }
+  .overlay-text {
+    // position over image:
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    > div {
+      margin: $indent-amount;
+    }
+    
+    // reset some styles:
+    line-height: normal;
+    p {
+      margin: 0;
+      max-width: none;
+    }
+    
+    // enable classes for ckeditor
+    @include flexslider-classes;
+  }
+}

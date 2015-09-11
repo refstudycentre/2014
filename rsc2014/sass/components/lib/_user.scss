@@ -1,0 +1,86 @@
+/**
+ *   User profile
+ */
+.profile {
+  .face_name {
+    overflow: hidden;
+    margin: 0;
+    @include decreasing-padding-left(5%);
+    
+    .user-picture {
+      margin: 0 $zen-gutter-width 0 0;
+      float: left;
+      img {
+        max-width: 150px;
+      }
+    }
+    dl, dd {
+      margin: 0;
+    }
+    dd {
+      display: block;
+      @include adjust-font-size-to( $h2-font-size );
+    }
+  }
+
+  // from: http://stackoverflow.com/questions/857561/display-definition-term-and-description-inline
+  dd,
+  dt{
+    display: inline;
+    margin: 0;
+  }
+  dd:before {
+    content: ' '; // space them
+  }
+  dt:before { // insert line break before <dt>
+    content:"\A";
+    white-space:pre;
+  }
+  dt:first-child:before { // disable line break before the first <dt>
+    content: none;
+  }
+}
+
+/**
+ *   User picture anywhere
+ */
+.user-picture img {
+  border: 1px solid $bluegrey2;
+}
+
+/**
+ *   User edit page
+ */
+#user-profile-form {
+  .fieldset-wrapper > .form-item {
+    margin: 0;
+  }
+  fieldset {
+    margin: rhythm(1) 0;
+  }
+}
+
+/**
+ *   Link back to preaching library from user page
+ */
+#back_to_pl {
+  
+  margin: rhythm(0.5) $indent-amount-small;
+  display: inline-block;
+  
+  a:link,
+  a:visited {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #839565;
+    border-radius: $indent-amount-small;
+    padding: rhythm(0.5) $indent-amount-small;
+  }
+  
+  a:hover,
+  a:focus {
+    background-color: white;
+    color: #839565;
+  }
+}

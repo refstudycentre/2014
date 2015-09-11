@@ -1,0 +1,130 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+.page-search {
+  #page-title-area {
+    display: none; // hide the title
+  }
+  #content > h2 {
+    display: none; // hide the title
+  }
+}
+
+.front {
+  #page-title-area {
+    display: none; // hide the title
+  }
+  #content > article.node-rsc-library.view-mode-full {
+    display: none; // hide frontpage markup
+  }
+}
+
+/**
+ * Pager
+ */
+.pager {
+  clear: both;
+  padding: 0;
+  margin: 0;
+  
+  li {
+    border: 1px solid $bluegrey2;
+    line-height: rhythm(2);
+  }
+}
+
+/**
+ * Blocks.
+ */
+
+#content,
+#content_mid_left,
+#content_mid_right,
+#content_lower {
+  .block {
+    @include clearfix; // this does not play well with rsc-taxonomy-menus
+  }
+}
+.sidebar .block-views {
+  @include clearfix;
+}
+
+/**
+ * Comments.
+ */
+
+/* Wrapper for the list of comments and its title. */
+#comments {
+  margin: rhythm(1) 0;
+  padding-top: rhythm(1);
+  border-top: 1px solid $bluegrey2;
+  clear: both; // clear the floated line containing "Share link" and number of reads 
+}
+
+/* Buttons used by contrib modules like Media. */
+a.button:link,
+a.button:visited {
+  color: $color_text;
+}
+
+/**
+ *   Zebra tables
+ */
+tr.odd {
+  background-color: transparent;
+}
+tr.even {
+  background-color: $bluegrey2;
+}
+
+// RSS Feed icons
+#page-title-area {
+  > .feed-icon, {
+    float: right;                                  // to the right of the title
+    @include adjust-font-size-to( $h1-font-size ); // same height as the title
+  }
+}
+
+div.block-views {
+  .feed-icon {
+    float: right;
+  }
+}
+
+// Node links
+article ul.links {
+  float: right;
+  margin: 0;
+}
+
+// AddToAny
+.a2a_img,
+.a2a_svg {
+  display: none !important;
+}
+.a2a_s_a2a {
+  background-image: none !important;
+}
+
+// Blog view
+.view-id-blogs {
+  .views-row {
+    margin-bottom: rhythm(0.5);
+    padding-bottom: rhythm(0.5);
+    border-bottom: 1px solid $bluegrey2;
+    p {
+      @include decreasing-padding;
+    }
+    .post-info {
+      text-align: right;
+      max-width: none;
+    }
+  }
+}

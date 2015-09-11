@@ -1,0 +1,25 @@
+/**
+ *   Per-role styling
+ */
+
+// By default, hide the filter selector & help section in comments form
+#comment-form {
+  .filter-wrapper {
+    display: none;
+  }
+  input.form-submit {
+    margin-top: rhythm(1);
+  }
+}
+// Display for admins and editors
+.role-editors,
+.role-administrator {
+  #comment-form {
+    .filter-wrapper {
+      display: block;
+    }
+    input.form-submit {
+      margin-top: 0;
+    }
+  }
+}

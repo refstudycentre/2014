@@ -1,0 +1,15 @@
+.view-cat-browse .view-content,
+.browse-taxonomy {
+  @media all and (max-width: ($t10 - 1px)) {
+    @include cat-browse(1);
+  }
+  @media all and (min-width: $t10) and (max-width: ($t8 - 1px)) {
+    @include cat-browse(2);
+  }
+  @media all and (min-width: $t8) and (max-width: ($t6 - 1px)) {
+    @include cat-browse(1);
+  }
+  @media all and (min-width: $t6) {
+    @include cat-browse(2);
+  }
+}

@@ -1,0 +1,28 @@
+#header {
+  .header__region {    
+    .block-menu {
+      padding: 0 5%;
+      position: absolute;
+      top: 0;
+      
+      a:link,
+      a:visited {
+        color: white;
+        background-color: $color_tab;
+        border-radius: 0 0 $indent-amount-small $indent-amount-small;
+        padding: rhythm(0.5) $indent-amount-small;
+        margin-left: $indent-amount-small;
+      }
+      
+      li {
+        padding: 0;
+      }
+      
+      a:hover,
+      a:focus {
+        color: $color_text_em;
+        background-color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+#header {
+  padding: 0;
+  
+  /* Wrapping link for logo. */
+  .header__logo {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Logo image. */
+  .header__logo-image {
+    width: auto;
+    max-width: 90%; // don't touch the sides
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* The name of the website. */
+  .header__site-name {
+    display: none;
+  }
+  
+  /* Wrapper for any blocks placed in the header region. */
+  .header__region {    
+    .block-menu {
+      a:link,
+      a:visited {
+        color: $grey5;
+      }
+      a:hover,
+      a:focus {
+        color: $blue6;
+      }
+    }
+    
+    #block-search-form {
+      * {
+        margin: 0;
+      }
+      h2 {
+        display: none;
+      }
+
+      float: right;
+      margin: 0;
+      padding-right: $zen-gutter-width/2;
+      input.form-text {
+        width: 18em;
+      }
+    }
+
+    .block-menu {
+      float: left;
+      padding-left: $zen-gutter-width/2;
+    }
+  }
+}
+
+
+.front,
+.page-search {
+  #header {
+    .header__region {
+      .block-menu {
+        text-align: center;
+        float: none;
+        padding-left: 0;
+      }
+      #block-search-form {
+        float: none;
+        background-color: $blue6;
+        padding-left:  $zen-gutter-width/2;
+        padding-right: $zen-gutter-width/2;
+        div.form-actions {
+          float: right;
+        }
+        input.form-submit {
+          padding-left: $indent-amount/2;
+          padding-right: $indent-amount/2;
+        }
+        input.form-text {
+          width: 60%; // fallback fix; real width set by js
+          padding-left: $indent-amount/2;
+          padding-right: $indent-amount/2;
+        }
+      }
+    }
+  }
+}

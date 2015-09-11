@@ -1,0 +1,59 @@
+article.node-rsc-library-article,
+article.node-rsc-library-audio {
+  ul.article-info {
+    padding: 0;
+    margin: rhythm(1) 0;
+    
+    li {
+      list-style-type: none;
+      display: inline;
+      padding: 0 $indent-amount;
+      border-left: 1px solid $color-text;
+    }
+    
+    li.first {
+      text-transform: uppercase;
+      color: $orange6;
+      font-weight: bold;
+      padding-left: 0;
+      border-left: none;
+      a {
+        color: $orange6;
+      }
+    }
+  }
+  ul.fields-list {
+    font-style:oblique;
+    padding: 0;
+    margin: rhythm(1) 0;
+    list-style-type: none;
+    .field-subscription {
+      padding-left: $indent-amount;
+    }
+  }
+  div.field-attachment {
+    display: inline;
+    ul.att-links.list.js {
+      display: inline;
+    }
+  }
+  div.field-form input[type="submit"], // TODO: this should be in rsc2014_cl subtheme?
+  div.field-name-rscl-link {
+  // TODO: make this a mixin?
+    display: inline;
+    background-color: $orange6;
+    border-radius: 5px;
+    padding: rhythm(0.25) $indent-amount-small;
+    margin: rhythm(0.25) 0;
+    a:link,
+    a:visited {
+      color: white;
+    }
+    @include adjust-font-size-to( $h3-font-size );
+    
+    // make it work for buttons too:
+    border: none;
+    color: white;
+    
+  }
+}

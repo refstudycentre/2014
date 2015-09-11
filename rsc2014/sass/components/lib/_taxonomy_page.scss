@@ -1,0 +1,49 @@
+#taxonomy-subterms-map {
+  thead {
+    color: $orange6;
+    text-transform: uppercase;
+    font-weight: bold;
+    th {
+      text-align: left;
+      padding-bottom: rhythm(1); // margin does not work
+    }
+  }
+  td,th {
+    border: none;
+    @media all and (max-width: ($t8 - 1)) {
+      padding: 0 $indent-amount-small/2;
+    }
+    @media all and (min-width: $t8) and (max-width: ($t4 - 1px)) {
+      padding: 0 $indent-amount-small;
+    }
+    @media all and (min-width: $t4) {
+      padding: 0 $indent-amount;
+    }
+  }
+  td {
+    a {
+      @include hanging-indent;
+    }
+  }
+  td.sub,
+  td.art {
+    text-align: right;
+  }
+}
+
+ol.search-results {
+  padding-left: 0;
+}
+
+.taxonomy-nodes-wrapper,
+.search-results {
+  article.node-teaser {
+    margin-bottom: rhythm(0.5);
+    padding-bottom: rhythm(0.5);
+    border-bottom: 1px solid $bluegrey2;
+    ul.article-info,
+    p {
+      @include decreasing-padding;
+    }
+  }
+}

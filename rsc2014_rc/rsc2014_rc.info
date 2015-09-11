@@ -1,0 +1,50 @@
+;screenshot  = screenshot.png
+name        = RSC Ressources Chrétiennes
+description = Responsive theme for RSC Ressources Chrétiennes
+core        = 7.x
+base theme  = rsc2014
+
+stylesheets[all][] = css/rc.css
+
+regions[header]            = Header
+regions[help]              = Help
+regions[content]           = Content upper (main)
+regions[content_mid_left]  = Content middle left column
+regions[content_mid_right] = Content middle right column
+regions[content_lower]     = Content lower
+regions[sidebar_first]     = First sidebar
+regions[sidebar_second]    = Second sidebar
+regions[footer]            = Footer
+regions[bottom]            = Page bottom
+
+regions[page_top]    = Page top
+regions[page_bottom] = Page bottom
+
+features[] = logo
+features[] = name
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+
+settings[zen_breadcrumb]           = yes
+settings[zen_breadcrumb_separator] = ' › '
+settings[zen_breadcrumb_home]      = 1
+settings[zen_breadcrumb_trailing]  = 0
+settings[zen_breadcrumb_title]     = 0
+settings[zen_skip_link_anchor]     = main-menu
+settings[zen_skip_link_text]       = Jump to navigation
+settings[zen_html5_respond_meta][] = respond
+settings[zen_html5_respond_meta][] = html5
+settings[zen_html5_respond_meta][] = meta
+settings[zen_rebuild_registry]     = 1
+settings[zen_wireframes]           = 0
+
+; Breakpoints
+; Ensure that these stay the same as in _responsive.scss
+; Order from largest to smallest for Picture 2.x
+breakpoints[t0] = (min-width: 960px)
+breakpoints[t4] = (min-width: 840px)
+breakpoints[t6] = (min-width: 720px)
+breakpoints[t8] = (min-width: 600px)
+breakpoints[t10] = (min-width: 0px)
+

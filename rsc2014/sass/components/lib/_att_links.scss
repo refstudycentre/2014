@@ -1,0 +1,58 @@
+ul.att-links.list.js {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+  a:link,
+  a:visited {
+    color: white;
+  }
+  @include adjust-font-size-to( $h3-font-size );
+  li {
+  }
+  li.read {
+    display: inline;
+    background-color: $orange6;
+    border-radius: 5px;
+    padding: rhythm(0.25) $indent-amount-small;
+    margin: rhythm(0.25) 0;
+  }
+  div.drop {
+    padding: rhythm(0.25) $indent-amount-small;
+    margin: rhythm(0.25) 0;
+    background-color: $orange6;
+    position: absolute;
+    left: $indent-amount;
+    border-radius: 5px;
+    li {
+      white-space: nowrap;
+    }
+  }
+  a.more {
+    padding-left: $indent-amount-small;
+    margin-left: $indent-amount-small;
+    border-left: 1px solid white;
+  }
+}
+
+div.att-links.audio {
+  text-align: center;
+  
+  a:link,
+  a:visited {
+    color: white;
+    background-color: $orange6;
+    border-radius: 5px;
+    padding: rhythm(0.25) $indent-amount-small;
+    @include adjust-font-size-to( $h3-font-size );
+  }
+  audio {
+    background-color: $blue6;
+    border-radius: 5px;
+  }
+  audio, a {
+    vertical-align: middle;
+    margin: rhythm(0.25) 0;
+  }
+}
+
