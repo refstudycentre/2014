@@ -26,6 +26,12 @@
   .field-name-rscc-author-authors:before {
     content: "\0000A0 \002014 \0000A0";
   }
+
+  // Put the comments back to left-alignment
+  section {
+    text-align: initial;
+  }
+
 }
 
 .node-type-rsc-cite-short #page-title-area {
