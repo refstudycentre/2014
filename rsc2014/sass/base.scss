@@ -1,3 +1,7 @@
+/*
+ * Things applicable to PL and library
+ */
+
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
 
@@ -12,3 +16,4 @@
 @import "components/base/misc";
 @import "components/base/blocks";
 @import "components/base/header";
+@import "components/base/rsc_cite";

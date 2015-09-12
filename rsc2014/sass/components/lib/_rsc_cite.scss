@@ -12,28 +12,6 @@
   }
 }
 
-// Short citations
-#block-rsc-cite-short,
-.node-rsc-cite-short {
-  text-align: center;
-  padding: rhythm(1) $zen-gutter-width/2;
-  .field-name-rscc-body {
-    @include quote-text;
-  }
-  .field-name-rscc-author-authors {
-    @include quote-author;
-  }
-  .field-name-rscc-author-authors:before {
-    content: "\0000A0 \002014 \0000A0";
-  }
-
-  // Put the comments back to left-alignment
-  section {
-    text-align: initial;
-  }
-
-}
-
 .node-type-rsc-cite-short #page-title-area {
   display: none; // hide the title area; there is no title
 }

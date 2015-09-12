@@ -29,6 +29,10 @@ html {
   #footer {
     background-color: $color_bg;
     color: white;
+    a:link,
+    a:visited {
+      color: white;
+    }
   }
   #page-title-area {
     background-color: $color_bg;
