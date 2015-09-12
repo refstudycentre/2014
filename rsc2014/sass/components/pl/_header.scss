@@ -10,8 +10,9 @@
         color: white;
         background-color: $color_tab;
         border-radius: 0 0 $indent-amount-small $indent-amount-small;
-        padding: rhythm(0.5) $indent-amount-small;
+        padding: 0 $indent-amount-small;
         margin-left: $indent-amount-small;
+        display: block;
       }
       
       li {
