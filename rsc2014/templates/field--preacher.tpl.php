@@ -50,7 +50,12 @@
         <?php endforeach; ?>
       </ul>
     <?php else: ?>
-      <span <?php print array_shift($item_attributes); ?>><?php print render(array_shift($items)); ?></span>
+      <span <?php print array_shift($item_attributes); ?>>
+        <?php
+        $item = array_shift($items);
+        print render($item);
+        ?>
+      </span>
     <?php endif; ?>
   </dd>
 </div>
