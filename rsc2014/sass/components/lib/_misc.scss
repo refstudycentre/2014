@@ -128,3 +128,18 @@ article ul.links {
     }
   }
 }
+
+
+// Teaser nodes in the main content area
+#content {
+  article.node-teaser {
+    margin-bottom: rhythm(0.5);
+    padding-bottom: rhythm(0.5);
+    border-bottom: 1px solid $bluegrey2;
+    ul.article-info,
+    p {
+      @include decreasing-padding;
+    }
+  }
+}
+

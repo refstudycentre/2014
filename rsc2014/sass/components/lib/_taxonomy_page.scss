@@ -34,16 +34,3 @@
 ol.search-results {
   padding-left: 0;
 }
-
-.taxonomy-nodes-wrapper,
-.search-results {
-  article.node-teaser {
-    margin-bottom: rhythm(0.5);
-    padding-bottom: rhythm(0.5);
-    border-bottom: 1px solid $bluegrey2;
-    ul.article-info,
-    p {
-      @include decreasing-padding;
-    }
-  }
-}
