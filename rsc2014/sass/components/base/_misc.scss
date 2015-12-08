@@ -612,6 +612,13 @@ html.js input.form-autocomplete {
   background-image: none; // we don't need the throbber
 }
 
+.ui-autocomplete {
+  // Something is setting z-index=1 on .ui-autocomplete elements
+  // This ensures that the autocomplete popup will display over other things
+  // TODO: find out what, so that we can remove the !important directive
+  z-index: 10 !important;
+}
+
 /**
  * Collapsible fieldsets.
  *
