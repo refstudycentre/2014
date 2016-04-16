@@ -211,12 +211,7 @@ function rsc2014_init() {
   
   $p = &$GLOBALS['rsc2014']['theme_path'];
 
-  if (
-    // URL starts with /pl or /preacher
-    in_array(arg(0), array('pl', 'preacher',)) ||
-    // A file is being accessed from the PL directory (needed to make 404 pages look like the PL theme)
-    substr(request_path(), 0, 15) == 'system/files/pl')
-  {
+  if (rsc2014_preaching_library()) {
 
     // Notify everyone (blocks, preprocess functions, etc.) that the PL flavour should be used
     $GLOBALS['rsc2014']['flavour'] = 'pl';
@@ -369,3 +364,20 @@ function rsc2014_comment_post_forbidden($variables) {
   }
 }
 
+
+/**
+ * Determine if the current page request has something to do with the Preaching
+ * Library. Since a theme and a module may not depend on one another, there is
+ * a copy of this function in rsc_cl. Keep them in sync please!
+ */
+function rsc2014_preaching_library() {
+
+  return
+
+    // URL starts with /pl or /preacher
+    in_array(arg(0), array('pl', 'preacher',)) ||
+
+    // A file is being accessed from the PL directory (needed to make 404 pages look like the PL theme)
+    substr(request_path(), 0, 15) == 'system/files/pl';
+
+}
