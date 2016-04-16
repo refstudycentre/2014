@@ -198,11 +198,6 @@ function rsc2014_init() {
    * which this PHP code returns TRUE (experts only)") to detect the theme. For
    * example, to hide a block on PL pages, use:
    *     return $GLOBALS['rsc2014']['flavour'] != 'pl';
-   *
-   * To make it work for drupal sites that live in a subfolder, don't use
-   * request_uri(). Rather use arg() and/or request_path(). Note that arg will
-   * return the internal argument of the page rather than the aliased URL seen
-   * by the browser. Sometimes useful, other times a pain.
    */
 
   $GLOBALS['rsc2014'] = array();
@@ -371,6 +366,13 @@ function rsc2014_comment_post_forbidden($variables) {
  * a copy of this function in rsc_cl. Keep them in sync please!
  */
 function rsc2014_preaching_library() {
+
+  /*
+   * To make it work for drupal sites that live in a subfolder, don't use
+   * request_uri(). Rather use arg() and/or request_path(). Note that arg will
+   * return the internal argument of the page rather than the aliased URL seen
+   * by the browser. Sometimes useful, other times a pain.
+   */
 
   return
 
