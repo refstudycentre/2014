@@ -183,33 +183,61 @@ function rsc2014_preprocess_user_profile(&$variables) {
 
 
 /**
- * Implements template_preprocess(&$variables, $hook).
- * https://api.drupal.org/api/drupal/includes!theme.inc/function/template_preprocess/7
- * 
- * Runs before all other preprocess hooks
+ * Hacky implementation of hook_init().
+ * https://api.drupal.org/api/drupal/modules!system!system.api.php/function/hook_init/7
+ *
+ * This runs as soon as template.php is included.
  */
-function rsc2014_preprocess(&$variables) {  
+rsc2014_init(); // This line is required because Drupal 7 does not invoke hook_init for themes.
+function rsc2014_init() {
+
+  /*
+   * Set the theme flavour
+   *
+   * This allows the site builder to use the php filter on blocks ("Pages on
+   * which this PHP code returns TRUE (experts only)") to detect the theme. For
+   * example, to hide a block on PL pages, use:
+   *     return $GLOBALS['rsc2014']['flavour'] != 'pl';
+   *
+   * To make it work for drupal sites that live in a subfolder, don't use
+   * request_uri(). Rather use arg() and/or request_path(). Note that arg will
+   * return the internal argument of the page rather than the aliased URL seen
+   * by the browser. Sometimes useful, other times a pain.
+   */
 
   $GLOBALS['rsc2014'] = array();
   $GLOBALS['rsc2014']['theme_path'] = drupal_get_path('theme', 'rsc2014'); 
   $GLOBALS['rsc2014']['flavour'] = 'default';
   
-  $p = $GLOBALS['rsc2014']['theme_path'];
-  $uri = request_uri();
+  $p = &$GLOBALS['rsc2014']['theme_path'];
 
-  // Set theme based on path
-  if (preg_match('/(^\/pl)|(^\/preacher)/',$uri)) {
+  if (
+    // URL starts with /pl or /preacher
+    in_array(arg(0), array('pl', 'preacher',)) ||
+    // A file is being accessed from the PL directory (needed to make 404 pages look like the PL theme)
+    substr(request_path(), 0, 15) == 'system/files/pl')
+  {
+
+    // Notify everyone (blocks, preprocess functions, etc.) that the PL flavour should be used
     $GLOBALS['rsc2014']['flavour'] = 'pl';
+
+    // Add CSS and JS for the PL theme
     drupal_add_css($p.'/css/pl.css', array('group' => CSS_THEME));
     drupal_add_js($p.'/js/pl.js', array('group' => JS_THEME));
+
   } else {
+
+    // Add CSS for the default (library) theme
+    // TODO: I wonder whether 'every_page' should really be TRUE here (Dolf, 20160416)
     drupal_add_css($p.'/css/lib.css', array('group' => CSS_THEME, 'every_page' => TRUE));
+
   }
   
   // Add js for front page
   if (drupal_is_front_page()) {
     drupal_add_js($p.'/js/front.js', array('group' => JS_THEME));
   }
+
 }
 
 
