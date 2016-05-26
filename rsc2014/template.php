@@ -18,16 +18,10 @@ function rsc2014_css_alter(&$css) {
 }
 
 
-function rsc2014_preprocess_node(&$vars) {
-  $c = &$vars['content'];
+function rsc2014_preprocess_node(&$variables) {
 
-  /*
-   * For all view modes:
-   */
-  
-  // For all content types:
-  
-  $l = &$c['links'];
+  $l = &$variables['content']['links'];
+
   if (empty($l['#links'])) {
     $l['#links'] = array();
   }
@@ -47,109 +41,6 @@ function rsc2014_preprocess_node(&$vars) {
     $l['#links'] = array('node-readmore' => $l['#links']['node-readmore']) + $l['#links'];
   }
 
-  // For content types rsc-library-article and rsc-library-audio:
-  if (in_array($vars['type'],array('rsc_library_article','rsc_library_audio'))) {
-
-    // find and render difficulty and author fields and merge them into a list:
-    $article_infos = array();
-    foreach ($c as $fieldname => &$field) {
-      if (substr($fieldname, 0, 12) === 'rscl_author_') {
-        $article_infos[1] = render($field);
-        unset($c[$fieldname]);
-      }
-      else {
-        if (substr($fieldname, 0, 16) === 'rscl_difficulty_') {
-          $article_infos[0] = render($field);
-          unset($c[$fieldname]);
-        }
-      }
-    }
-    ksort($article_infos);
-    if (!empty($article_infos)) {
-      $c['article_info'] = array(
-        '#weight' => -20,
-        '#markup' => '<ul class="article-info"><li class="first">' . implode('</li> <li>', $article_infos) . '</li></ul>',
-      );
-    }
-
-  }
-
-  /*
-   * For specific view modes:
-   */
-
-  switch($vars['view_mode']) {
-
-    case 'full':
-
-      // For content types rsc-library-article and rsc-library-audio:
-      if (in_array($vars['type'],array('rsc_library_article','rsc_library_audio'))) {
-
-        // create compound field from source, date and pages fields
-        $src = array();
-        $pages = "";
-        // find and render source field
-        foreach($c as $fieldname => &$field) {
-          if (substr($fieldname,0,12) === 'rscl_source_') {
-            if (!empty($field[0])) {
-              $src[] = t('Source: !src',array('!src'=>trim(render($field))));
-              unset($c[$fieldname]);
-            }
-            break; // there is only one
-          }
-        }
-        if (!empty($c['rscl_date'][0])) {
-          $src[] = trim(render($c['rscl_date']));
-          unset($c['rscl_date']);
-        }
-        if (!empty($c['rscl_pages'][0])) {
-          $pages = t('!pages&nbsp;pages.',array('!pages'=>trim(render($c['rscl_pages'][0]))));
-          unset($c['rscl_pages']);
-        }
-        if ($src && $pages) {
-          $c['source_info'] = array(
-            '#weight' => -10,
-            '#markup' => implode(', ',$src).". ".$pages,
-          );
-        } else if ($src) {
-          $c['source_info'] = array(
-            '#weight' => -10,
-            '#markup' => implode(', ',$src),
-          );
-        } else if ($pages) {
-          $c['source_info'] = array(
-            '#weight' => -10,
-            '#markup' => $pages,
-          );
-        }
-
-        // make a list of fields (better semantics than a lot of divs)
-        $exclude = array('links','comments','rscl_body','article_info','rscl_link','rscl_attachment','field_image');
-        $items = array();
-        foreach(array_diff(array_keys($c),$exclude) as $key) {
-          $field = &$c[$key];
-          $items[$field['#weight']] = render($field);
-          unset($field);
-        }
-        ksort($items);
-        if (!empty($items))
-          $c['fields-list'] = array(
-            '#weight' => 4,
-            '#markup' => '<ul class="fields-list"><li class="first">'.implode('</li><li>',$items).'</li></ul>',
-          );
-      }
-
-      break;
-
-    case 'rscl_block':
-
-      // use template node--rsc-block.tpl.php
-      $vars['theme_hook_suggestions'][] = "node__{$vars['view_mode']}";
-
-      break;
-
-  }
-  
 }
 
 
