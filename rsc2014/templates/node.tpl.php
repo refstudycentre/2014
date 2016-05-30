@@ -13,7 +13,7 @@
     <header>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-        <h2<?php print $title_attributes; if ($page) print 'style="display:none;"'; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+        <h2<?php print $title_attributes; if ($page) print ' style="display:none;"'; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       
