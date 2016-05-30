@@ -41,21 +41,20 @@ article.node-rsc-library-book-preview {
   }
   div.field-form input[type="submit"], // TODO: this should be in rsc2014_cl subtheme?
   div.field-name-rscl-link {
-  // TODO: make this a mixin?
     display: inline;
-    background-color: $orange6;
-    border-radius: 5px;
-    padding: rhythm(0.25) $indent-amount-small;
-    margin: rhythm(0.25) 0;
-    a:link,
-    a:visited {
-      color: white;
-    }
-    @include adjust-font-size-to( $h3-font-size );
-    
-    // make it work for buttons too:
-    border: none;
-    color: white;
-    
+    @include library_button;
   }
+}
+
+article.node-rsc-library-book-preview {
+
+  ul.book-links-list {
+    padding-left: 0;
+  }
+
+  ul.book-links-list > li {
+    display: inline-block;
+    @include library_button;
+  }
+
 }

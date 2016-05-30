@@ -253,3 +253,23 @@ $popup_width: 180px;
   }
 }
 
+/*
+ * Apply this to the element surrounding the <a> or <button> tag(s).
+ */
+@mixin library_button {
+
+  background-color: $orange6;
+  border-radius: 5px;
+  padding: rhythm(0.25) $indent-amount-small;
+  margin: rhythm(0.25) 0 rhythm(0.25) $indent-amount-small;
+  a:link,
+  a:visited {
+    color: white;
+  }
+  @include adjust-font-size-to( $h3-font-size );
+
+  // make it work for <button>s too:
+  border: none;
+  color: white;
+
+}
