@@ -20,7 +20,7 @@ Drupal.behaviors.rsc2014_all = {
     var respond = function(){
       
       // maximise the width of the audio element
-      $("div.att-links.audio > audio").width($("div.att-links.audio").width() - $("div.att-links.audio > a").width() - 50);
+      $("div.rsc-attachment-formatter-audio > audio").width($("div.rsc-attachment-formatter-audio").width() - $("div.rsc-attachment-formatter-audio > a").width() - 50);
 
       // maximise the width of the search bar on some pages
       $(".front, .page-search").find("#search-block-form input.form-text").width($("#search-block-form").width() - $("#search-block-form #edit-submit").width() - 50);

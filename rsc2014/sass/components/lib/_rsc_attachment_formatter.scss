@@ -1,4 +1,4 @@
-ul.att-links.list.js {
+ul.rsc-attachment-formatter-list.js {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -35,8 +35,13 @@ ul.att-links.list.js {
   }
 }
 
-div.att-links.audio {
+div.rsc-attachment-formatter-audio {
   text-align: center;
+
+  background-image: url('../images/icon-audio.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding-left: $indent-amount * 2;
   
   a:link,
   a:visited {
