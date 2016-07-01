@@ -33,14 +33,9 @@ article.node-rsc-library-book-preview {
       padding-left: $indent-amount;
     }
   }
-  div.field-name-rscl-attachment {
-    ul.rsc-attachment-formatter-list.js {
-      display: inline;
-    }
-    article {
-      margin-top: rhythm(1);
-      margin-bottom: rhythm(1);
-    }
+  div.field-name-rscl-attachment article {
+    margin-top: rhythm(1);
+    margin-bottom: rhythm(1);
   }
   div.field-form input[type="submit"], // TODO: this should be in rsc2014_cl subtheme?
   div.field-name-rscl-link {
