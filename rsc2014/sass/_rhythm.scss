@@ -109,8 +109,9 @@ $s6: $sidebar-font-size-relative*$h6-font-size;
       height: auto;
     }
   }
-  #block-search-form {
-    @include adjust-font-size-to($search-font-size,2,$s0);
+  #block-search-form input {
+    @include adjust-font-size-to($search-font-size, 1, $s0);
+    @include rhythm(0, 0.25, 0.25, 0, $search-font-size);
   }
   .block-menu {
     @include adjust-font-size-to($s0,2,$s0);
@@ -167,4 +168,17 @@ $s6: $sidebar-font-size-relative*$h6-font-size;
   @include zen-clear(); // Footer spans the width of the site, below all other content, on all layouts
   padding-top: rhythm(1);
   padding-bottom: rhythm(1);
+}
+
+
+/* Forms */
+
+#content {
+  input, textarea, select {
+    @include adjust-font-size-to($base-font-size);
+    @include rhythm(0, 0.25, 0.25, 0, $base-font-size);
+  }
+  select {
+    height: rhythm(2, $base-font-size);
+  }
 }

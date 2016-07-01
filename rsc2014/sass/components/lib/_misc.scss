@@ -143,3 +143,16 @@ article ul.links {
   }
 }
 
+
+// Hide some of the filter help dialog
+fieldset.filter-wrapper {
+  .filter-help, .filter-guidelines {
+    display: none;
+  }
+  .form-item {
+    margin: 0;
+    padding: 0;
+  }
+  padding: 0;
+  border: none;
+}
