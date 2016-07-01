@@ -12,13 +12,6 @@
   #footer,
   .region-bottom {
     outline: 1px solid #ccc;
-
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-      .lt-ie8 & {
-        /* IE6/7 do not support the outline property. */
-        border: 1px solid #ccc;
-      }
-    }
   }
 }
 
@@ -86,9 +79,6 @@
   margin: rhythm(1) 0;
   padding: 10px 10px 10px 50px;
   background-image: inline-image("message-24-ok.png");
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *background-image: image-url("message-24-ok.png");
-  }
   background-position: 8px 8px;
   background-repeat: no-repeat;
   border: 1px solid #be7;
@@ -103,9 +93,6 @@
   @extend .messages;
   @extend %warning;
   background-image: inline-image("message-24-warning.png");
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *background-image: image-url("message-24-warning.png");
-  }
   border-color: #ed5;
 }
 .messages--error,
@@ -113,9 +100,6 @@
   @extend .messages;
   @extend %error;
   background-image: inline-image("message-24-error.png");
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *background-image: image-url("message-24-error.png");
-  }
   border-color: #ed541d;
 
 }
@@ -312,9 +296,6 @@ span.field-label {
 }
 .more-help-link a {
   background-image: inline-image("help.png");
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    *background-image: image-url("help.png");
-  }
   background-position: 0 50%;
   background-repeat: no-repeat;
   padding: 1px 0 1px 20px;
@@ -411,13 +392,6 @@ span.field-label {
   text-align: center;
   /* A very nice CSS3 property. */
   word-wrap: break-word;
-}
-@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-  .lt-ie8 .node-unpublished>*,
-  .lt-ie8 .comment-unpublished>* {
-    /* Otherwise these elements will appear below the "Unpublished" text. */
-    position: relative;
-  }
 }
 
 /**
@@ -613,18 +587,12 @@ html.js input.form-autocomplete {
 .fieldset-legend {
   html.js .collapsible & {
     background-image: inline-image("menu-expanded.png");
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-      *background-image: image-url("menu-expanded.png");
-    }
     background-position: 5px 65%;
     background-repeat: no-repeat;
     padding-left: 15px;
   }
   html.js .collapsed & {
     background-image: inline-image("menu-collapsed.png");
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-      *background-image: image-url("menu-collapsed.png");
-    }
     background-position: 5px 50%;
   }
   .summary {
