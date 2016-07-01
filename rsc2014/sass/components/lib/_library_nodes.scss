@@ -44,6 +44,21 @@ article.node-rsc-library-book-preview {
     display: inline;
     @include library_button;
   }
+  article.field-name-rscl-full-text {
+    header {
+      padding-left: $indent-amount * 3;
+      background-image: url('../images/icon-text.png');
+      background-repeat: no-repeat;
+      background-size: auto $indent-amount;
+      background-position: 0 rhythm(0.5);
+
+      * {
+        margin: 0;
+      }
+      margin-top: rhythm(1);
+      margin-bottom: rhythm(1);
+    }
+  }
 }
 
 article.node-rsc-library-book-preview {

@@ -40,7 +40,8 @@ div.rsc-attachment-formatter-audio {
 
   background-image: url('../images/icon-audio.png');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto $indent-amount;
+  background-position: 0 center;
   padding-left: $indent-amount * 2;
   
   a:link,
