@@ -24,14 +24,24 @@ Drupal.behaviors.rsc2014_all = {
 
       // maximise the width of the search bar on some pages
       $(".front, .page-search").find("#search-block-form input.form-text").width($("#search-block-form").width() - $("#search-block-form #edit-submit").width() - 50);
-      
+
+      var lineheight = 22; // hard not to hardcode
+
       // make the height of sidebar images a multiple of the line height by cropping it slightly using the surrounding a tag's height property
       var a = $(".block-rsc-library article").find("span.field-featured-image, span.field-image").find("a");
-      var lineheight = 22; // hard not to hardcode
       $.each(a,function(){
         var img = $(this).find("img").first();
         var lines = (img.height() / lineheight >> 0); // integer division
         $(this).height(lines * lineheight);
+      });
+
+      // Preserve vertical rhythm for video elements by modifying the surrounding a div's height property
+      var videos = $(".rsc-attachment-formatter-video > video");
+      $.each(videos,function(){
+        var video = $(this);
+        var div = video.parent();
+        var lines = (video.height() / lineheight >> 0); // integer division
+        div.height((lines + 3) * lineheight); // +1 is to add space instead of cropping. +2 for the download button
       });
 
     };
