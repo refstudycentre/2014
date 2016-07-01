@@ -14,12 +14,12 @@ ul.rsc-attachment-formatter-list.js {
     display: inline;
     background-color: $orange6;
     border-radius: 5px;
-    padding: rhythm(0.25) $indent-amount-small;
-    margin: rhythm(0.25) 0;
+    padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+    margin: rhythm(0.25, $h3-font-size) 0;
   }
   div.drop {
-    padding: rhythm(0.25) $indent-amount-small;
-    margin: rhythm(0.25) 0;
+    padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+    margin: rhythm(0.25, $h3-font-size) 0;
     background-color: $orange6;
     position: absolute;
     left: $indent-amount;
@@ -43,49 +43,54 @@ div.rsc-attachment-formatter-audio {
   background-size: auto $indent-amount;
   background-position: 0 center;
   padding-left: $indent-amount * 2;
+
+  height: rhythm(2);
   
   a:link,
   a:visited {
     color: white;
     background-color: $orange6;
     border-radius: 5px;
-    padding: rhythm(0.25) $indent-amount-small;
+    padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
     @include adjust-font-size-to( $h3-font-size );
   }
   audio {
     background-color: $blue6;
     border-radius: 5px;
-  }
-  audio, a {
-    vertical-align: middle;
-    margin: rhythm(0.25) 0;
+    position: relative;
+    top: 8px; // This is a hack... TODO: figure out a better way to center audio in a div
   }
 }
 
 div.rsc-attachment-formatter-video {
 
-  background-image: url('../images/icon-video.png');
-  background-repeat: no-repeat;
-  background-size: rhythm(2) auto;
+  div {
+    background-image: url('../images/icon-video.png');
+    background-repeat: no-repeat;
+    background-size: rhythm(2) auto;
+    padding-left: $indent-amount * 3;
+    height: rhythm(2);
 
-  a:link,
-  a:visited {
+    a:link,
+    a:visited {
 
-    position: relative;
-    left: $indent-amount * 3;
-    display: inline-block;
-    margin: rhythm(0.25) 0;
+      color: white;
+      background-color: $orange6;
+      border-radius: 5px;
+      padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+      margin: rhythm(0.25, $h3-font-size) 0;
+      @include adjust-font-size-to( $h3-font-size );
 
-    color: white;
-    background-color: $orange6;
-    border-radius: 5px;
-    padding: rhythm(0.25) $indent-amount-small;
-    @include adjust-font-size-to( $h3-font-size );
+      position: absolute;
+
+    }
 
   }
+
   video {
     width: 100%;
     border-radius: 5px;
   }
+
 }
 

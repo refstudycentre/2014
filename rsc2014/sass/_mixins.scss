@@ -260,8 +260,8 @@ $popup_width: 180px;
 
   background-color: $orange6;
   border-radius: 5px;
-  padding: rhythm(0.25) $indent-amount-small;
-  margin: rhythm(0.25) 0 rhythm(0.25) $indent-amount-small;
+  padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+  margin: rhythm(0.25, $h3-font-size) 0 rhythm(0.25, $h3-font-size) $indent-amount-small;
   a:link,
   a:visited {
     color: white;
