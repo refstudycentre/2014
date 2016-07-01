@@ -1,15 +1,22 @@
 ul.rsc-attachment-formatter-list.js {
-  padding: 0;
+
+  background-image: url('../images/icon-text.png');
+  background-repeat: no-repeat;
+  background-size: auto $indent-amount;
+  background-position: 0 center;
+
+  padding: rhythm(0.5, $h3-font-size) 0 rhythm(0.5, $h3-font-size) $indent-amount * 3;
   margin: 0;
+  @include adjust-font-size-to( $h3-font-size );
+
   list-style-type: none;
   position: relative;
+
   a:link,
   a:visited {
     color: white;
   }
-  @include adjust-font-size-to( $h3-font-size );
-  li {
-  }
+
   li.read {
     display: inline;
     background-color: $orange6;
@@ -17,22 +24,25 @@ ul.rsc-attachment-formatter-list.js {
     padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
     margin: rhythm(0.25, $h3-font-size) 0;
   }
+
   div.drop {
     padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
     margin: rhythm(0.25, $h3-font-size) 0;
     background-color: $orange6;
     position: absolute;
-    left: $indent-amount;
+    left: $indent-amount * 4;
     border-radius: 5px;
     li {
       white-space: nowrap;
     }
   }
+
   a.more {
     padding-left: $indent-amount-small;
     margin-left: $indent-amount-small;
     border-left: 1px solid white;
   }
+
 }
 
 div.rsc-attachment-formatter-audio {
