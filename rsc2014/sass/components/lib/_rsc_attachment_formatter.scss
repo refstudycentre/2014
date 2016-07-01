@@ -62,3 +62,30 @@ div.rsc-attachment-formatter-audio {
   }
 }
 
+div.rsc-attachment-formatter-video {
+
+  background-image: url('../images/icon-video.png');
+  background-repeat: no-repeat;
+  background-size: rhythm(2) auto;
+
+  a:link,
+  a:visited {
+
+    position: relative;
+    left: $indent-amount * 3;
+    display: inline-block;
+    margin: rhythm(0.25) 0;
+
+    color: white;
+    background-color: $orange6;
+    border-radius: 5px;
+    padding: rhythm(0.25) $indent-amount-small;
+    @include adjust-font-size-to( $h3-font-size );
+
+  }
+  video {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+

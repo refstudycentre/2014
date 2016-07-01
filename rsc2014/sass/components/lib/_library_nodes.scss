@@ -34,9 +34,12 @@ article.node-rsc-library-book-preview {
     }
   }
   div.field-name-rscl-attachment {
-    display: inline;
     ul.rsc-attachment-formatter-list.js {
       display: inline;
+    }
+    article {
+      margin-top: rhythm(1);
+      margin-bottom: rhythm(1);
     }
   }
   div.field-form input[type="submit"], // TODO: this should be in rsc2014_cl subtheme?
