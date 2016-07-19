@@ -1,0 +1,1538 @@
+/*
+ * Things applicable to library
+ */
+/* Import Sass mixins, variables, Compass modules, etc. */
+/* Variables used for horisontal rhythm (i.e. more than what they were intended for in zen base theme) */
+/**
+ *   Layout variables
+ */
+/* VERTICAL menus where submenus pop RIGHT (default). */
+/* VERTICAL menus where submenus pop LEFT. */
+/**
+ *   Category browser view
+ */
+/**
+ *   To create columns using float:left;
+ */
+/**
+ *   For quotes
+ */
+/* Component (SMACSS module) rules */
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Adds modular sets of styles.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000312}}
+.page-search #page-title-area {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000315}}
+.page-search #content > h2 {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000321}}
+.front #page-title-area {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000324}}
+.front #content > article.node-rsc-library.view-mode-full {
+  display: none;
+}
+
+/**
+ * Pager
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000332}}
+.pager {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000337}}
+.pager li {
+  border: 1px solid #dfe6ec;
+  line-height: 3.38462em;
+}
+
+/**
+ * Blocks.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000351}}
+#content .block,
+#content_mid_left .block,
+#content_mid_right .block,
+#content_lower .block {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000355}}
+.sidebar .block-views {
+  overflow: hidden;
+}
+
+/**
+ * Comments.
+ */
+/* Wrapper for the list of comments and its title. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000364}}
+#comments {
+  margin: 1.69231em 0;
+  padding-top: 1.69231em;
+  border-top: 1px solid #dfe6ec;
+  clear: both;
+}
+
+/* Buttons used by contrib modules like Media. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000373}}
+a.button:link,
+a.button:visited {
+  color: #404040;
+}
+
+/**
+ *   Zebra tables
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000380}}
+tr.odd {
+  background-color: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000383}}
+tr.even {
+  background-color: #dfe6ec;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000389}}
+#page-title-area > .feed-icon {
+  float: right;
+  font-size: 2em;
+  line-height: 1.69231em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\0000396}}
+div.block-views .feed-icon {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003102}}
+article ul.links {
+  float: right;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003109}}
+.a2a_img,
+.a2a_svg {
+  display: none !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003112}}
+.a2a_s_a2a {
+  background-image: none !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003118}}
+.view-id-blogs .views-row {
+  margin-bottom: 0.84615em;
+  padding-bottom: 0.84615em;
+  border-bottom: 1px solid #dfe6ec;
+}
+@media all and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003122}}
+  .view-id-blogs .views-row p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003122}}
+  .view-id-blogs .views-row p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003122}}
+  .view-id-blogs .views-row p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003125}}
+.view-id-blogs .views-row .post-info {
+  text-align: right;
+  max-width: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003135}}
+#content article.node-teaser {
+  margin-bottom: 0.84615em;
+  padding-bottom: 0.84615em;
+  border-bottom: 1px solid #dfe6ec;
+}
+@media all and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003140}}
+  #content article.node-teaser ul.article-info,
+  #content article.node-teaser p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003140}}
+  #content article.node-teaser ul.article-info,
+  #content article.node-teaser p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_misc\.scss}line{font-family:\00003140}}
+  #content article.node-teaser ul.article-info,
+  #content article.node-teaser p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+/**
+ * Colors
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\000034}}
+html {
+  color: #404040;
+  background-color: #f2f2f2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\000039}}
+html a:link,
+html a:visited {
+  color: #003466;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000313}}
+html .sidebars {
+  color: #303030;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000316}}
+html .sidebars a:link,
+html .sidebars a:visited {
+  color: #303030;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000319}}
+html .sidebars h1, html .sidebars h2, html .sidebars h3, html .sidebars h4, html .sidebars h5, html .sidebars h6 {
+  color: #003466;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000322}}
+html .sidebars h1 a:link,
+html .sidebars h1 a:visited, html .sidebars h2 a:link,
+html .sidebars h2 a:visited, html .sidebars h3 a:link,
+html .sidebars h3 a:visited, html .sidebars h4 a:link,
+html .sidebars h4 a:visited, html .sidebars h5 a:link,
+html .sidebars h5 a:visited, html .sidebars h6 a:link,
+html .sidebars h6 a:visited {
+  color: #003466;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000329}}
+html h1, html h2, html h3, html h4, html h5, html h6 {
+  color: #003466;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000332}}
+html h1 a:link,
+html h1 a:visited, html h2 a:link,
+html h2 a:visited, html h3 a:link,
+html h3 a:visited, html h4 a:link,
+html h4 a:visited, html h5 a:link,
+html h5 a:visited, html h6 a:link,
+html h6 a:visited {
+  color: #003466;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000340}}
+html #midcol {
+  background-color: white;
+  border-color: #bfccd9;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000347}}
+html #footer {
+  background-color: #003466;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000351}}
+html #footer a:link,
+html #footer a:visited {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000355}}
+html #page-title-area {
+  background-color: #003466;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000357}}
+html #page-title-area #page-title {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000360}}
+html #page-title-area div.messages {
+  border-color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_color\.scss}line{font-family:\0000366}}
+fieldset {
+  border-color: #bfccd9;
+}
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\000036}}
+ul.rsc-taxonomy-menu,
+ul.rsc-taxonomy-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000312}}
+ul.rsc-taxonomy-menu li {
+  float: left;
+  /* LTR */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000316}}
+ul.rsc-taxonomy-menu li:hover {
+  background-color: #bfccd9;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000320}}
+ul.rsc-taxonomy-menu ul {
+  top: 1.8em;
+  left: -1px;
+  /* LTR */
+  border: 1px solid #bfccd9;
+  margin-right: 0;
+  /* LTR */
+  background-color: #f2f2f2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000328}}
+ul.rsc-taxonomy-menu ul li {
+  width: 12.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000334}}
+.block-rsc-taxonomy-menus,
+#block-rsc-cl-library-menu {
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000339}}
+ul.rsc-taxonomy-menu,
+ul.rsc-taxonomy-menu ul {
+  z-index: 5;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000344}}
+ul.rsc-taxonomy-menu li {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000348}}
+ul.rsc-taxonomy-menu a {
+  display: block;
+  padding: 0 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000353}}
+ul.rsc-taxonomy-menu ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000358}}
+ul.rsc-taxonomy-menu li.over ul {
+  visibility: visible;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000362}}
+ul.rsc-taxonomy-menu ul li {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000366}}
+ul.rsc-taxonomy-menu:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Show submenus when over their parents. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000382}}
+ul.rsc-taxonomy-menu li:hover ul,
+ul.rsc-taxonomy-menu li.menuparent li:hover ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li:hover ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li.menuparent li:hover ul,
+ul.rsc-taxonomy-menu li.over ul,
+ul.rsc-taxonomy-menu li.menuparent li.over ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li.over ul,
+ul.rsc-taxonomy-menu li.menuparent li.menuparent li.menuparent li.over ul {
+  visibility: visible;
+}
+
+/* Hide sub-menus initially. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_taxonomy_menus\.scss}line{font-family:\0000398}}
+ul.rsc-taxonomy-menu li:hover ul ul,
+ul.rsc-taxonomy-menu li:hover ul ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover ul ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover li:hover ul ul,
+ul.rsc-taxonomy-menu li:hover li:hover li:hover ul ul ul,
+ul.rsc-taxonomy-menu li.over ul ul,
+ul.rsc-taxonomy-menu li.over ul ul ul,
+ul.rsc-taxonomy-menu li.over li.over ul ul,
+ul.rsc-taxonomy-menu li.over li.over ul ul ul,
+ul.rsc-taxonomy-menu li.over li.over li.over ul ul,
+ul.rsc-taxonomy-menu li.over li.over li.over ul ul ul {
+  visibility: hidden;
+}
+
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000344}}
+.region-sidebar-first ul.rsc-taxonomy-menu {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000346}}
+.region-sidebar-first ul.rsc-taxonomy-menu > li {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000349}}
+.region-sidebar-first ul.rsc-taxonomy-menu li {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000352}}
+.region-sidebar-first ul.rsc-taxonomy-menu ul {
+  width: 180px;
+  left: 100%;
+  top: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000357}}
+.region-sidebar-first ul.rsc-taxonomy-menu ul ul {
+  width: 180px;
+  left: 180px;
+  top: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000363}}
+.region-sidebar-first ul.rsc-taxonomy-menu li.menuparent,
+.region-sidebar-first ul.rsc-taxonomy-menu li li.menuparent {
+  background-image: url("../images/arrow-right.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000369}}
+.region-sidebar-first ul.rsc-taxonomy-menu a,
+.region-sidebar-first ul.rsc-taxonomy-menu ul a {
+  margin-right: 14px;
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000377}}
+.region-sidebar-second ul.rsc-taxonomy-menu {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000379}}
+.region-sidebar-second ul.rsc-taxonomy-menu > li {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000382}}
+.region-sidebar-second ul.rsc-taxonomy-menu li {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000385}}
+.region-sidebar-second ul.rsc-taxonomy-menu li ul {
+  width: 180px;
+  left: -180px;
+  top: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000390}}
+.region-sidebar-second ul.rsc-taxonomy-menu li ul li ul {
+  width: 180px;
+  left: -180px;
+  top: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000396}}
+.region-sidebar-second ul.rsc-taxonomy-menu li.menuparent,
+.region-sidebar-second ul.rsc-taxonomy-menu li li.menuparent {
+  background-image: url("../images/arrow-left.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003102}}
+.region-sidebar-second ul.rsc-taxonomy-menu a,
+.region-sidebar-second ul.rsc-taxonomy-menu ul a {
+  padding-left: 14px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_blocks\.scss}line{font-family:\000034}}
+.view-id-news .field-body {
+  margin-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_blocks\.scss}line{font-family:\000036}}
+.view-id-news .field-body a {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_cite\.scss}line{font-family:\000035}}
+#block-rsc-cite-paragraph .field-name-rscc-author-authors,
+.node-rsc-cite-paragraph .field-name-rscc-author-authors {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_cite\.scss}line{font-family:\0000315}}
+.node-type-rsc-cite-short #page-title-area {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_rsc_cite\.scss}line{font-family:\0000319}}
+#block-rsc-cite-short {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/**
+ * Breadcrumb navigation.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_breadcrumbs\.scss}line{font-family:\000035}}
+.breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_breadcrumbs\.scss}line{font-family:\000039}}
+.breadcrumb li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_breadcrumbs\.scss}line{font-family:\0000317}}
+nav.breadcrumb {
+  margin-bottom: 0.84615em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_breadcrumbs\.scss}line{font-family:\0000319}}
+nav.breadcrumb li a {
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_breadcrumbs\.scss}line{font-family:\0000322}}
+nav.breadcrumb li, nav.breadcrumb a {
+  color: #ebe6ff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\000032}}
+#taxonomy-subterms-map thead {
+  color: #ff5208;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\000036}}
+#taxonomy-subterms-map thead th {
+  text-align: left;
+  padding-bottom: 1.69231em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\0000311}}
+#taxonomy-subterms-map td, #taxonomy-subterms-map th {
+  border: none;
+}
+@media all and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\0000311}}
+  #taxonomy-subterms-map td, #taxonomy-subterms-map th {
+    padding: 0 6.25px;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\0000311}}
+  #taxonomy-subterms-map td, #taxonomy-subterms-map th {
+    padding: 0 12.5px;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\0000311}}
+  #taxonomy-subterms-map td, #taxonomy-subterms-map th {
+    padding: 0 25px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\0000324}}
+#taxonomy-subterms-map td a {
+  text-indent: -12.5px;
+  margin-left: 12.5px;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\0000329}}
+#taxonomy-subterms-map td.sub,
+#taxonomy-subterms-map td.art {
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_taxonomy_page\.scss}line{font-family:\0000334}}
+ol.search-results {
+  padding-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\000033}}
+article.node-rsc-library-article ul.article-info,
+article.node-rsc-library-audio ul.article-info {
+  padding: 0;
+  margin: 1.69231em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\000037}}
+article.node-rsc-library-article ul.article-info li,
+article.node-rsc-library-audio ul.article-info li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 25px;
+  border-left: 1px solid #404040;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000314}}
+article.node-rsc-library-article ul.article-info li.first,
+article.node-rsc-library-audio ul.article-info li.first {
+  text-transform: uppercase;
+  color: #ff5208;
+  font-weight: bold;
+  padding-left: 0;
+  border-left: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000320}}
+article.node-rsc-library-article ul.article-info li.first a,
+article.node-rsc-library-audio ul.article-info li.first a {
+  color: #ff5208;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000325}}
+article.node-rsc-library-article ul.fields-list,
+article.node-rsc-library-audio ul.fields-list {
+  font-style: oblique;
+  padding: 0;
+  margin: 1.69231em 0;
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000330}}
+article.node-rsc-library-article ul.fields-list .field-subscription,
+article.node-rsc-library-audio ul.fields-list .field-subscription {
+  padding-left: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000334}}
+article.node-rsc-library-article div.field-name-rscl-attachment,
+article.node-rsc-library-audio div.field-name-rscl-attachment {
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000336}}
+article.node-rsc-library-article div.field-name-rscl-attachment ul.att-links.list.js,
+article.node-rsc-library-audio div.field-name-rscl-attachment ul.att-links.list.js {
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000341}}
+article.node-rsc-library-article div.field-form input[type="submit"],
+article.node-rsc-library-article div.field-name-rscl-link,
+article.node-rsc-library-audio div.field-form input[type="submit"],
+article.node-rsc-library-audio div.field-name-rscl-link {
+  display: inline;
+  background-color: #ff5208;
+  border-radius: 5px;
+  padding: 0.42308em 12.5px;
+  margin: 0.42308em 0;
+  font-size: 1.17em;
+  line-height: 1.44642em;
+  border: none;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_nodes\.scss}line{font-family:\0000349}}
+article.node-rsc-library-article div.field-form input[type="submit"] a:link,
+article.node-rsc-library-article div.field-form input[type="submit"] a:visited,
+article.node-rsc-library-article div.field-name-rscl-link a:link,
+article.node-rsc-library-article div.field-name-rscl-link a:visited,
+article.node-rsc-library-audio div.field-form input[type="submit"] a:link,
+article.node-rsc-library-audio div.field-form input[type="submit"] a:visited,
+article.node-rsc-library-audio div.field-name-rscl-link a:link,
+article.node-rsc-library-audio div.field-name-rscl-link a:visited {
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\000039}}
+.block-rsc-library article.node-rsc-library-article span.field-name-field-featured-image a,
+.block-rsc-library article.node-rsc-library-article span.field-image a,
+.block-rsc-library article.node-rsc-library-audio span.field-name-field-featured-image a,
+.block-rsc-library article.node-rsc-library-audio span.field-image a {
+  border: 1px solid #bfccd9;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000317}}
+.block-rsc-library article.node-rsc-library-article span.field-name-field-featured-image a img,
+.block-rsc-library article.node-rsc-library-article span.field-image a img,
+.block-rsc-library article.node-rsc-library-audio span.field-name-field-featured-image a img,
+.block-rsc-library article.node-rsc-library-audio span.field-image a img {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000323}}
+.block-rsc-library article.node-rsc-library-article a,
+.block-rsc-library article.node-rsc-library-audio a {
+  text-indent: 0;
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000328}}
+.block-rsc-library article.node-rsc-library-article ul.article-info,
+.block-rsc-library article.node-rsc-library-audio ul.article-info {
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000332}}
+.block-rsc-library article.node-rsc-library-article ul.article-info li,
+.block-rsc-library article.node-rsc-library-audio ul.article-info li {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  border: none;
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000338}}
+.block-rsc-library article.node-rsc-library-article ul.article-info li a,
+.block-rsc-library article.node-rsc-library-audio ul.article-info li a {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000343}}
+.block-rsc-library article.node-rsc-library-article ul.article-info li.first,
+.block-rsc-library article.node-rsc-library-audio ul.article-info li.first {
+  text-transform: uppercase;
+  color: #ff5208;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000347}}
+.block-rsc-library article.node-rsc-library-article ul.article-info li.first a,
+.block-rsc-library article.node-rsc-library-audio ul.article-info li.first a {
+  color: #ff5208;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000359}}
+#block-rsc-library-feat-cat ul,
+#block-rsc-library-new-node ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_library_blocks\.scss}line{font-family:\0000362}}
+#block-rsc-library-feat-cat ul li,
+#block-rsc-library-new-node ul li {
+  margin-left: 12.5px;
+  text-indent: -12.5px;
+  display: block;
+}
+
+@media all and (max-width: 599px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003123}}
+  .view-cat-browse .view-content ul,
+  .browse-taxonomy ul {
+    margin: 0;
+    padding: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003127}}
+  .view-cat-browse .view-content div.item-list,
+  .browse-taxonomy div.item-list {
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003132}}
+  .view-cat-browse .view-content > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li {
+    list-style-type: none;
+    margin: 1.69231em 0 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003136}}
+  .view-cat-browse .view-content > .item-list > ul > li.first,
+  .browse-taxonomy > .item-list > ul > li.first {
+    margin: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003141}}
+  .view-cat-browse .view-content > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > a {
+    display: block;
+    font-size: 1.5em;
+    line-height: 2.25641em;
+    text-align: center;
+    background-color: #dfe6ec;
+    border: 1px solid #bfccd9;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003150}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    margin: 0 2% 0 0;
+    float: left;
+    width: 98%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003155}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > a {
+    font-weight: bold;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003159}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul {
+    padding-left: 25px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003163}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12.5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003170}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li {
+    list-style-type: none;
+    margin-left: 6.25px;
+    padding-left: 6.25px;
+    border-left: 1px solid #bfccd9;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003123}}
+  .view-cat-browse .view-content ul,
+  .browse-taxonomy ul {
+    margin: 0;
+    padding: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003127}}
+  .view-cat-browse .view-content div.item-list,
+  .browse-taxonomy div.item-list {
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003132}}
+  .view-cat-browse .view-content > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li {
+    list-style-type: none;
+    margin: 1.69231em 0 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003136}}
+  .view-cat-browse .view-content > .item-list > ul > li.first,
+  .browse-taxonomy > .item-list > ul > li.first {
+    margin: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003141}}
+  .view-cat-browse .view-content > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > a {
+    display: block;
+    font-size: 1.5em;
+    line-height: 2.25641em;
+    text-align: center;
+    background-color: #dfe6ec;
+    border: 1px solid #bfccd9;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003150}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    margin: 0 2% 0 0;
+    float: left;
+    width: 48%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003155}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > a {
+    font-weight: bold;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003159}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul {
+    padding-left: 25px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003163}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12.5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003170}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li {
+    list-style-type: none;
+    margin-left: 6.25px;
+    padding-left: 6.25px;
+    border-left: 1px solid #bfccd9;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 839px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003123}}
+  .view-cat-browse .view-content ul,
+  .browse-taxonomy ul {
+    margin: 0;
+    padding: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003127}}
+  .view-cat-browse .view-content div.item-list,
+  .browse-taxonomy div.item-list {
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003132}}
+  .view-cat-browse .view-content > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li {
+    list-style-type: none;
+    margin: 1.69231em 0 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003136}}
+  .view-cat-browse .view-content > .item-list > ul > li.first,
+  .browse-taxonomy > .item-list > ul > li.first {
+    margin: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003141}}
+  .view-cat-browse .view-content > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > a {
+    display: block;
+    font-size: 1.5em;
+    line-height: 2.25641em;
+    text-align: center;
+    background-color: #dfe6ec;
+    border: 1px solid #bfccd9;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003150}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    margin: 0 2% 0 0;
+    float: left;
+    width: 98%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003155}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > a {
+    font-weight: bold;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003159}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul {
+    padding-left: 25px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003163}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12.5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003170}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li {
+    list-style-type: none;
+    margin-left: 6.25px;
+    padding-left: 6.25px;
+    border-left: 1px solid #bfccd9;
+  }
+}
+@media all and (min-width: 840px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003123}}
+  .view-cat-browse .view-content ul,
+  .browse-taxonomy ul {
+    margin: 0;
+    padding: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003127}}
+  .view-cat-browse .view-content div.item-list,
+  .browse-taxonomy div.item-list {
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003132}}
+  .view-cat-browse .view-content > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li {
+    list-style-type: none;
+    margin: 1.69231em 0 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003136}}
+  .view-cat-browse .view-content > .item-list > ul > li.first,
+  .browse-taxonomy > .item-list > ul > li.first {
+    margin: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003141}}
+  .view-cat-browse .view-content > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > a {
+    display: block;
+    font-size: 1.5em;
+    line-height: 2.25641em;
+    text-align: center;
+    background-color: #dfe6ec;
+    border: 1px solid #bfccd9;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003150}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    margin: 0 2% 0 0;
+    float: left;
+    width: 48%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003155}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > a,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > a {
+    font-weight: bold;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003159}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul {
+    padding-left: 25px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003163}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12.5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\00003170}}
+  .view-cat-browse .view-content > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li,
+  .browse-taxonomy > .item-list > ul > li > .item-list > ul > li > .item-list > ul > li .item-list > ul > li {
+    list-style-type: none;
+    margin-left: 6.25px;
+    padding-left: 6.25px;
+    border-left: 1px solid #bfccd9;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\000031}}
+#header {
+  padding: 0;
+  /* Wrapping link for logo. */
+  /* Logo image. */
+  /* The name of the website. */
+  /* Wrapper for any blocks placed in the header region. */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\000035}}
+#header .header__logo {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000311}}
+#header .header__logo-image {
+  width: auto;
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000320}}
+#header .header__site-name {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000328}}
+#header .header__region .block-menu a:link,
+#header .header__region .block-menu a:visited {
+  color: silver;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000332}}
+#header .header__region .block-menu a:hover,
+#header .header__region .block-menu a:focus {
+  color: #003466;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000337}}
+#header .header__region #block-search-form {
+  float: right;
+  margin: 0;
+  padding-right: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000338}}
+#header .header__region #block-search-form * {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000341}}
+#header .header__region #block-search-form h2 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000348}}
+#header .header__region #block-search-form input.form-text {
+  width: 18em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000353}}
+#header .header__region .block-menu {
+  float: left;
+  padding-left: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000365}}
+.front #header .header__region .block-menu,
+.page-search #header .header__region .block-menu {
+  text-align: center;
+  float: none;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000370}}
+.front #header .header__region #block-search-form,
+.page-search #header .header__region #block-search-form {
+  float: none;
+  background-color: #003466;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000375}}
+.front #header .header__region #block-search-form div.form-actions,
+.page-search #header .header__region #block-search-form div.form-actions {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000378}}
+.front #header .header__region #block-search-form input.form-submit,
+.page-search #header .header__region #block-search-form input.form-submit {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_header\.scss}line{font-family:\0000382}}
+.front #header .header__region #block-search-form input.form-text,
+.page-search #header .header__region #block-search-form input.form-text {
+  width: 60%;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\000031}}
+ul.att-links.list.js {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+  font-size: 1.17em;
+  line-height: 1.44642em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\000037}}
+ul.att-links.list.js a:link,
+ul.att-links.list.js a:visited {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000313}}
+ul.att-links.list.js li.read {
+  display: inline;
+  background-color: #ff5208;
+  border-radius: 5px;
+  padding: 0.42308em 12.5px;
+  margin: 0.42308em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000320}}
+ul.att-links.list.js div.drop {
+  padding: 0.42308em 12.5px;
+  margin: 0.42308em 0;
+  background-color: #ff5208;
+  position: absolute;
+  left: 25px;
+  border-radius: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000327}}
+ul.att-links.list.js div.drop li {
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000331}}
+ul.att-links.list.js a.more {
+  padding-left: 12.5px;
+  margin-left: 12.5px;
+  border-left: 1px solid white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000338}}
+div.att-links.audio {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000342}}
+div.att-links.audio a:link,
+div.att-links.audio a:visited {
+  color: white;
+  background-color: #ff5208;
+  border-radius: 5px;
+  padding: 0.42308em 12.5px;
+  font-size: 1.17em;
+  line-height: 1.44642em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000349}}
+div.att-links.audio audio {
+  background-color: #003466;
+  border-radius: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_att_links\.scss}line{font-family:\0000353}}
+div.att-links.audio audio, div.att-links.audio a {
+  vertical-align: middle;
+  margin: 0.42308em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000358}}
+#block-views-rsc-slider-view-block {
+  display: none;
+  overflow: visible;
+  height: 20.30769em;
+  margin-bottom: -1.69231em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000368}}
+.flexslider {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 1.69231em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000374}}
+.flexslider ul.slides {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 0 4px 4px 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000382}}
+.flexslider .flex-control-nav {
+  bottom: -1.69231em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000384}}
+.flexslider .flex-control-nav li {
+  vertical-align: bottom;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000388}}
+.flexslider .flex-direction-nav {
+  line-height: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000391}}
+.flexslider img {
+  border-radius: 2px;
+  border: 1px solid #dfe6ec;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000395}}
+.flexslider .overlay-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\00003101}}
+.flexslider .overlay-text > div {
+  margin: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\00003107}}
+.flexslider .overlay-text p {
+  margin: 0;
+  max-width: none;
+}
+@media all and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\000034}}
+  .flexslider .overlay-text .fs-33 {
+    max-width: none;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\000034}}
+  .flexslider .overlay-text .fs-33 {
+    max-width: 50%;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\000034}}
+  .flexslider .overlay-text .fs-33 {
+    max-width: 33%;
+  }
+}
+@media all and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000315}}
+  .flexslider .overlay-text .fs-50 {
+    max-width: none;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000315}}
+  .flexslider .overlay-text .fs-50 {
+    max-width: 75%;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000315}}
+  .flexslider .overlay-text .fs-50 {
+    max-width: 50%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000326}}
+.flexslider .overlay-text .fs-right {
+  margin-left: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000329}}
+.flexslider .overlay-text .fs-left {
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000332}}
+.flexslider .overlay-text .fs-hcenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000336}}
+.flexslider .overlay-text .fs-box1 {
+  background-color: #dfe6ec;
+  background-color: rgba(223, 230, 236, 0.75);
+  border-radius: 12.5px;
+  padding: 12.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000342}}
+.flexslider .overlay-text .fs-box2 {
+  background-color: #003466;
+  background-color: rgba(0, 52, 102, 0.75);
+  border-radius: 12.5px;
+  padding: 12.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\0000348}}
+.flexslider .overlay-text .fs-box3 {
+  background-color: #003466;
+  background-color: rgba(0, 52, 102, 0.75);
+  border-radius: 12.5px;
+  border: 2px solid #ff5208;
+  padding: 12.5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_flexslider\.scss}line{font-family:\00003118}}
+.node-type-rsc-slider-content #page-title-area {
+  display: none;
+}
+
+/**
+ *   Per-role styling
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_roles\.scss}line{font-family:\000037}}
+#comment-form .filter-wrapper {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_roles\.scss}line{font-family:\0000310}}
+#comment-form input.form-submit {
+  margin-top: 1.69231em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_roles\.scss}line{font-family:\0000318}}
+.role-editors #comment-form .filter-wrapper,
+.role-administrator #comment-form .filter-wrapper {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_roles\.scss}line{font-family:\0000321}}
+.role-editors #comment-form input.form-submit,
+.role-administrator #comment-form input.form-submit {
+  margin-top: 0;
+}
+
+/**
+ *   User profile
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\000035}}
+.profile .face_name {
+  overflow: hidden;
+  margin: 0;
+}
+@media all and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\000035}}
+  .profile .face_name {
+    padding-left: 5%;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\000035}}
+  .profile .face_name {
+    padding-left: 10%;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\000035}}
+  .profile .face_name {
+    padding-left: 15%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000310}}
+.profile .face_name .user-picture {
+  margin: 0 50px 0 0;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000313}}
+.profile .face_name .user-picture img {
+  max-width: 150px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000317}}
+.profile .face_name dl, .profile .face_name dd {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000320}}
+.profile .face_name dd {
+  display: block;
+  font-size: 1.5em;
+  line-height: 2.25641em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000328}}
+.profile dd,
+.profile dt {
+  display: inline;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000332}}
+.profile dd:before {
+  content: ' ';
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000335}}
+.profile dt:before {
+  content: "\A";
+  white-space: pre;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000339}}
+.profile dt:first-child:before {
+  content: none;
+}
+
+/**
+ *   User picture anywhere
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000347}}
+.user-picture img {
+  border: 1px solid #dfe6ec;
+}
+
+/**
+ *   User edit page
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000355}}
+#user-profile-form .fieldset-wrapper > .form-item {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000358}}
+#user-profile-form fieldset {
+  margin: 1.69231em 0;
+}
+
+/**
+ *   Link back to preaching library from user page
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000366}}
+#back_to_pl {
+  margin: 0.84615em 12.5px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000372}}
+#back_to_pl a:link,
+#back_to_pl a:visited {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #839565;
+  border-radius: 12.5px;
+  padding: 0.84615em 12.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/components\/lib\/_user\.scss}line{font-family:\0000382}}
+#back_to_pl a:hover,
+#back_to_pl a:focus {
+  background-color: white;
+  color: #839565;
+}
+
+/**
+ * @file
+ * Print styling
+ *
+ * We provide some sane print styling for Drupal using Zen's layout method.
+ */
+/**
+ * By importing this CSS file as media "all", we allow this print file to be
+ * aggregated with other stylesheets, for improved front-end performance.
+ */
+@media print {
+  /* Underline all links. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000316}}
+  a:link,
+  a:visited {
+    text-decoration: underline !important;
+    /* Don't underline header. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000320}}
+  a:link.header__site-link,
+  a:visited.header__site-link {
+    text-decoration: none !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000325}}
+  #content {
+    /* Add visible URL after links. */
+    /* Only display useful links. */
+    /* Add visible title after abbreviations. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000327}}
+  #content a[href]:after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+    font-size: 13px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000335}}
+  #content a[href^="javascript:"]:after,
+  #content a[href^="#"]:after {
+    content: "";
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000340}}
+  #content abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Un-float the content. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000346}}
+  #content {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Turn off any background colors or images. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000357}}
+  body,
+  #page,
+  #main,
+  #content {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  /* Hide sidebars and nav elements. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/repos\/2014\/rsc2014\/sass\/_print\.scss}line{font-family:\0000377}}
+  #skip-link,
+  #toolbar,
+  #navigation,
+  .region-sidebar-first,
+  .region-sidebar-second,
+  #footer,
+  .breadcrumb,
+  .tabs,
+  .action-links,
+  .links,
+  .book-navigation,
+  .forum-topic-navigation,
+  .pager,
+  .feed-icons {
+    visibility: hidden;
+    display: none;
+  }
+}
