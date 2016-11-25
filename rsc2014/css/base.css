@@ -1,0 +1,1835 @@
+@charset "UTF-8";
+/*
+ * Things applicable to PL and library
+ */
+/* Import Sass mixins, variables, Compass modules, etc. */
+/* Variables used for horisontal rhythm (i.e. more than what they were intended for in zen base theme) */
+/**
+ *   Layout variables
+ */
+/* VERTICAL menus where submenus pop RIGHT (default). */
+/* VERTICAL menus where submenus pop LEFT. */
+/**
+ *   Category browser view
+ */
+/**
+ *   To create columns using float:left;
+ */
+/**
+ *   For quotes
+ */
+/*
+ * Apply this to the element surrounding the <a> or <button> tag(s).
+ */
+/* HTML element (SMACSS base) rules */
+/**
+ * HTML5 display definitions
+ */
+/* Correct `block` display not defined in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000316}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Correct `inline-block` display not defined in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000323}}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000331}}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Address styling not present in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000337}}
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000348}}
+html {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  /* 1 */
+  font-size: 81.25%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  line-height: 1.69231em;
+}
+
+/* Remove default margin. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000358}}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000369}}
+a:link {
+  text-decoration: none;
+}
+
+/* Address `outline` inconsistency between Chrome and other browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000381}}
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and also mouse hovered in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000387}}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Address styling not present in IE 8/9, Safari 5, and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000392}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\0000398}}
+b,
+strong {
+  font-weight: bold;
+}
+
+/* Address styling not present in Safari 5 and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003103}}
+dfn {
+  font-style: italic;
+}
+
+/* Address differences between Firefox and other browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003108}}
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 1px solid #666;
+  padding-bottom: -1px;
+  margin: 1.69231em 0;
+}
+
+/* Address styling not present in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003117}}
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* Correct font family set oddly in Safari 5 and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003128}}
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+  font-size: 1em;
+  line-height: 1.69231em;
+}
+
+/* Improve readability of pre-formatted text in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003134}}
+pre {
+  white-space: pre-wrap;
+}
+
+/* Set consistent quote types. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003139}}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* Address inconsistent and variable font size in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003144}}
+small {
+  font-size: 80%;
+}
+
+/* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003150}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003156}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003159}}
+sub {
+  bottom: -0.25em;
+}
+
+/**
+ * Lists
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003166}}
+ul {
+  list-style-type: circle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003172}}
+dl,
+menu,
+ol,
+ul {
+  /* Address margins set differently in IE 6/7. */
+  margin: 1.69231em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003179}}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  /* Turn off margins on nested lists. */
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003184}}
+dd {
+  margin: 0 0 0 25px;
+}
+
+/* Address paddings set differently in IE 6/7. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003191}}
+menu,
+ol,
+ul {
+  padding: 0 0 0 25px;
+}
+
+/**
+ * Embedded content and figures
+ *
+ * @todo Look into adding responsive embedded video.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003200}}
+img {
+  /* Remove border when inside `a` element in IE 8/9. */
+  border: 0;
+  /* Suppress the space beneath the baseline */
+  /* vertical-align: bottom; */
+  /* Responsive images */
+  max-width: 100%;
+  height: auto;
+  /* Correct IE 8 not scaling image height when resized. */
+  width: auto;
+}
+
+/* Correct overflow displayed oddly in IE 9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003217}}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Address margin not present in IE 8/9 and Safari 5. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003222}}
+figure {
+  margin: 0;
+}
+
+/**
+ * Forms
+ */
+/* Define consistent border, margin, and padding. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003231}}
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-top-style: solid;
+  border-top-width: 0.07692em;
+  padding-top: 0.51538em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.07692em;
+  padding-bottom: 1.02308em;
+  border-left-style: solid;
+  border-left-width: 0.07692em;
+  padding-left: 1.02308em;
+  border-right-style: solid;
+  border-right-width: 0.07692em;
+  padding-right: 1.02308em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003245}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improve appearance and consistency with IE 6/7.
+ * 5. Keep form elements constrained in their containers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003260}}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  max-width: 100%;
+  /* 5 */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 5 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003273}}
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003284}}
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003300}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003309}}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003320}}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003330}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003340}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Remove inner padding and border in Firefox 4+. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003346}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003355}}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* Drupal-style form labels. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003361}}
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/**
+ * Tables
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003369}}
+table {
+  /* Remove most spacing between table cells. */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* Prevent cramped-looking tables */
+  /* width: 100%; */
+  /* Add vertical rhythm margins. */
+  margin-top: 1.69231em;
+  margin-bottom: 1.69231em;
+}
+
+/**
+ *   Lists & menus in sidebars
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003384}}
+.sidebar ul, .sidebar ol, .sidebar li, .sidebar .menu__item.is-leaf {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003388}}
+.sidebar ul ul.menu, .sidebar ol ul.menu, .sidebar li ul.menu, .sidebar .menu__item.is-leaf ul.menu {
+  padding-left: 12.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003394}}
+.sidebar ul a,
+.sidebar ol a {
+  text-indent: -12.5px;
+  margin-left: 12.5px;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003403}}
+.sidebar .block-current-search ul a,
+.sidebar .block-current-search ol a,
+.sidebar .block-facetapi ul a,
+.sidebar .block-facetapi ol a {
+  display: inline;
+}
+
+/**
+ *   Lists & menus in header
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003413}}
+.header__region ul, .header__region ol, .header__region li, .header__region .menu__item.is-leaf {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ *   Font
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003423}}
+p {
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  max-width: 36em;
+}
+
+/**
+ *   Protect contextual links from other link css
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003431}}
+ul.contextual-links > li {
+  margin: 0    !important;
+  padding: 0    !important;
+  border: none !important;
+  float: none !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_normalize\.scss}line{font-family:\00003438}}
+ul.contextual-links > li > a {
+  text-indent: 0 !important;
+}
+
+/**
+ * Typography & Vertical rhythm
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\000036}}
+p,
+pre {
+  margin: 1.69231em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\000039}}
+blockquote {
+  margin: 1.69231em 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000313}}
+h1 {
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.69231em;
+  margin-top: 0.84615em;
+  margin-bottom: 0.84615em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000319}}
+h2 {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 2.25641em;
+  margin-top: 1.12821em;
+  margin-bottom: 1.12821em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000325}}
+h3 {
+  font-weight: 300;
+  font-size: 1.17em;
+  line-height: 1.44642em;
+  margin-top: 1.44642em;
+  margin-bottom: 1.44642em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000331}}
+h4 {
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1.69231em;
+  margin-top: 1.69231em;
+  margin-bottom: 1.69231em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000337}}
+h5 {
+  font-weight: 100;
+  font-size: 0.83em;
+  line-height: 2.03892em;
+  margin-top: 2.03892em;
+  margin-bottom: 2.03892em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000343}}
+h6 {
+  font-weight: 100;
+  font-size: 0.67em;
+  line-height: 2.52583em;
+  margin-top: 2.52583em;
+  margin-bottom: 2.52583em;
+}
+
+/* Sidebar typography */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000359}}
+.sidebar, #header, nav.breadcrumb {
+  font-size: 0.9em;
+  line-height: 1.88034em;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000364}}
+.sidebar h1, #header h1, nav.breadcrumb h1 {
+  font-size: 2em;
+  line-height: 1.88034em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000367}}
+.sidebar h2, #header h2, nav.breadcrumb h2 {
+  font-size: 1.5em;
+  line-height: 2.50712em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000370}}
+.sidebar h3, #header h3, nav.breadcrumb h3 {
+  font-size: 1.17em;
+  line-height: 1.60713em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000373}}
+.sidebar h4, #header h4, nav.breadcrumb h4 {
+  font-size: 1em;
+  line-height: 1.88034em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000376}}
+.sidebar h5, #header h5, nav.breadcrumb h5 {
+  font-size: 0.83em;
+  line-height: 2.26547em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000379}}
+.sidebar h6, #header h6, nav.breadcrumb h6 {
+  font-size: 0.67em;
+  line-height: 2.80648em;
+}
+
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000385}}
+  .sidebar {
+    margin-top: 3.76068em;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000385}}
+  .sidebar {
+    margin-top: 1.88034em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000394}}
+.sidebar .block, .sidebar article {
+  margin-bottom: 1.88034em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\0000398}}
+#header {
+  margin-bottom: 1.88034em;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003101}}
+#header .header__logo-image {
+  height: 5.64103em;
+}
+@media all and (max-width: 599px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003101}}
+  #header .header__logo-image {
+    max-height: 5.64103em;
+    height: auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003112}}
+#header #block-search-form input {
+  font-size: 1.3em;
+  line-height: 1.44642em;
+  margin-top: 0em;
+  padding-top: 0.3616em;
+  padding-bottom: 0.3616em;
+  margin-bottom: 0em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003116}}
+#header .block-menu {
+  font-size: 1em;
+  line-height: 3.76068em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003119}}
+#header .header__logo-image {
+  margin-top: 1.88034em;
+  margin-bottom: 1.88034em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003128}}
+.front #header .header__logo-image,
+.page-search #header .header__logo-image {
+  margin-top: 1.88034em;
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003132}}
+.front #header #block-search-form,
+.page-search #header #block-search-form {
+  margin-top: 1.44642em;
+  padding-top: 1.44642em;
+  padding-bottom: 1.44642em;
+  margin-bottom: 0em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003135}}
+.front #header #block-search-form input.form-submit,
+.front #header #block-search-form input.form-text,
+.page-search #header #block-search-form input.form-submit,
+.page-search #header #block-search-form input.form-text {
+  margin-top: 0em;
+  padding-top: 0.3616em;
+  padding-bottom: 0.3616em;
+  margin-bottom: 0em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003142}}
+#page-title-area {
+  padding-top: 0.84615em;
+  padding-bottom: 0.84615em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003148}}
+#content {
+  margin-top: 1.69231em;
+  margin-bottom: 1.69231em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003155}}
+#content_mid_left,
+#content_mid_right {
+  margin-top: 0;
+  margin-bottom: -0.84615em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003159}}
+#content_lower {
+  margin: 1.69231em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003162}}
+#content_mids_wrapper {
+  margin: 1.69231em 0;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003167}}
+#footer {
+  clear: left;
+  padding-top: 1.69231em;
+  padding-bottom: 1.69231em;
+}
+
+/* Forms */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003177}}
+#content input, #content textarea, #content select {
+  font-size: 1em;
+  line-height: 1.69231em;
+  margin-top: 0em;
+  padding-top: 0.42308em;
+  padding-bottom: 0.42308em;
+  margin-bottom: 0em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_rhythm\.scss}line{font-family:\00003181}}
+#content select {
+  height: 3.38462em;
+}
+
+/* Layout rules */
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+/* Variables moved to _init.scss */
+/**
+ * Center the page.
+ *
+ * Prevent excessively long lines of text by setting a max-width.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\0000330}}
+#page,
+.region-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\0000345}}
+#header,
+#page-title-area,
+#content,
+#content_mid_left,
+#content_mid_right,
+#content_lower,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 25px;
+  padding-right: 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Containers for grid items and flow items. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000346}}
+#header:before, #header:after,
+#midcol:before,
+#midcol:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000350}}
+#header:after,
+#midcol:after,
+#footer:after {
+  clear: both;
+}
+
+@media all and (max-width: 599px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\0000361}}
+  .sidebars {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\0000369}}
+  .region-sidebar-first div.block-rsc-taxonomy {
+    display: none;
+  }
+}
+/**
+ * Use 3 grid columns for smaller screens.
+ */
+@media all and (min-width: 600px) and (max-width: 959px) {
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\0000385}}
+  .sidebar-first {
+    /* Span 2 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\0000387}}
+  .sidebar-first #midcol {
+    float: left;
+    width: 66.66667%;
+    margin-left: 33.33333%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\0000392}}
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003100}}
+  .sidebar-second {
+    /* Span 2 columns, starting in 1st column from left. */
+    /* Span 1 column, starting in 3rd column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003102}}
+  .sidebar-second #midcol {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003107}}
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003115}}
+  .two-sidebars {
+    /* Span 2 columns, starting in 1st column from left. */
+    /* Have both sidebars on the right, one under the other */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003117}}
+  .two-sidebars #midcol {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003122}}
+  .two-sidebars aside.sidebars {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000374}}
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000376}}
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu > li {
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000379}}
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu li {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000382}}
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu li ul {
+    width: 180px;
+    left: -180px;
+    top: -1px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000387}}
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu li ul li ul {
+    width: 180px;
+    left: -180px;
+    top: -1px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000393}}
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu li.menuparent,
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu li li.menuparent {
+    background-image: url("../images/arrow-left.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/_mixins\.scss}line{font-family:\0000399}}
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu a,
+  .two-sidebars aside.sidebars section.region-sidebar-first ul.rsc-taxonomy-menu ul a {
+    padding-left: 14px;
+  }
+}
+/**
+ * Use 5 grid columns for larger screens.
+ */
+@media all and (min-width: 960px) {
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003145}}
+  .sidebar-first {
+    /* Span 4 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003147}}
+  .sidebar-first #midcol {
+    float: left;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003152}}
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003160}}
+  .sidebar-second {
+    /* Span 4 columns, starting in 1st column from left. */
+    /* Span 1 column, starting in 5th column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003162}}
+  .sidebar-second #midcol {
+    float: left;
+    width: 80%;
+    margin-left: 0%;
+    margin-right: -80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003167}}
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003175}}
+  .two-sidebars {
+    /* Span 3 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+    /* Span 1 column, starting in 5th column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003177}}
+  .two-sidebars #midcol {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: -80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003182}}
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003187}}
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003193}}
+  #content_mid_left {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    clear: left;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003199}}
+  #content_mid_right {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/layouts\/_responsive\.scss}line{font-family:\00003206}}
+  #content_lower {
+    clear: left;
+  }
+}
+/* Component (SMACSS module) rules */
+/**
+ * Wireframes.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000313}}
+.with-wireframes #header,
+.with-wireframes #content,
+.with-wireframes #content_mid_left,
+.with-wireframes #content_mid_right,
+.with-wireframes #content_lower,
+.with-wireframes .region-sidebar-first,
+.with-wireframes .region-sidebar-second,
+.with-wireframes #footer,
+.with-wireframes .region-bottom {
+  outline: 1px solid #ccc;
+}
+
+/**
+ * Accessibility features.
+ */
+/* element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000324}}
+.element-invisible,
+.element-focusable {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Turns off the element-invisible effect. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000329}}
+.element-focusable:active, .element-focusable:focus {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+/*
+ * The skip-link link will be completely hidden until a user tabs to the link.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000346}}
+#skip-link {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000350}}
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/**
+ * Titles.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000370}}
+.news-title,
+.page__title,
+.node__title,
+.block__title,
+.comments__title,
+.comments__form-title,
+.comment__title {
+  /* Comment title. */
+  margin: 0;
+}
+
+/**
+ * Messages.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000378}}
+.messages, .messages--status,
+.messages.status, .messages--warning,
+.messages.warning, .messages--error,
+.messages.error {
+  margin: 1.69231em 0;
+  padding: 10px 10px 10px 50px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAD6UlEQVR42s2WX0xbVRzH3YwmC4k+GF/0ZS/S267/bmnX9nL7bwstZlnbjTDYyoC5GCbB0ZW5pdJCe6swbLFA6bpWIGuRMWVjKGP+21QW3SZBSAjGh4XEaTZTH82Cm/3ztS2xs7mw4KLRk3xyzj33/H6fe5Pz7zEA/yr/vUDukj9FH6drqTaqT8EoPs/UV+nX6TD1BlUh9AqLHlmgPKLcRHmoCOWmElK/FOKTYpS8UwLJkASiUyLI3pKhlClN0g46qj+qL/pbArlbrlO1q25JeiSgR2iYJ8ywXLSg/qP6LNl2ro8+Q4MMkKCd9K2t3q3KdQnkXXIF5aISkgEJzONm1F2qW52pDJN1MI2bUBIuAdVOJWSMTPNQgX6/vkjVpvpREpag6oMqWCYta1IzbsHh9ga0RJtzY8URMdRO9U/KSuWmNQUqh2pY3CtG+fvlqJyofMAFNrZAE+7e/RWR4X4cD9tgOGsA2U2CdtMDqwqyMyIzQ5KKqAKmcyaYxkzYd3YvjGNGFtXRPRj58DT+LOemRrFnrBLyITmUDmUyO/NYgu2d26ukHVJo3tXAMGpAs+cQmh0NeClan30uwN7TgnQ6nRd4r3thOGOAJqYB2UVC79AfZAnKHGUxQa8A2tNaNLW/jKvXv8Dyb8s4yryKA4O10A3roIvpUB+swTdz1/LJZ27PQBvT5lBH1RD4BChzlQ2wBNtc22aE/ULQgzRCl4P5BPcT93GMOYz9wb2QhCRgAq35d8u/L2PXe7tADVGgBlcQ+AXQtmlvsP/gzbJZvp8PMkJCFBYh8m0knyiVSsHe0YIGZz1+/uVOvt8z7QGvnwf+ST5EIRHIUyR4fh50rbp5lsDcYR4ReAXgBrng9q/Qfa0bfy035r7Ot2dvz4IX4IEIEAXwvDzscOw4zxJUd1YfEXlE4Aa4BQHMlwzSSBeI7iXvoTxWDqKPYCFsFaKmr+YVliB0JfS89DVpiuhlB9k/tSOZTuYFvq98yI7L0/MAsVWcGp0bfW61hbahwltxSeARsIKyWKesSKQSWIwvYkvvllwfx88pgOvhwthu/AzAxlVX8vz385tLbaVxwpcLZtEw0QDjsBGctzksiE4CimZFfHp++oWHbnbuUfdB0komMgHsRN1r0MWBsEmYODF5onY92/UTwcvBxuzXcN1ccHycVSn2FaPYWwzCQUDWKIt7z3utAJ5c74Hz+OLSomynY+cVfiM/xW3JiDyZpB3FuZrj4oCwE+Ad4qWMjPHjpTtL0mzMoxyZz9yM39Q7Y85Ok930icqm+k59TL2wm9l90dZv8y/8sPAigGf/iUN/Q4anM2zOsdLe+L+4VfwBVVjDs2rTYx0AAAAASUVORK5CYII=');
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+  border: 1px solid #be7;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000392}}
+.messages--warning,
+.warning.messages--status,
+.warning.messages--warning,
+.warning.messages,
+.warning.messages--error {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuElEQVRIiWP4//8/Ay0xSYqntTpnT252zqeJBf0Njhsykrz/pyd6/e9vcNpGVQv6q2wlm0qc/r0+IPD/3UG+/61l9v9mdrjIUc2C7hqHUzc3S///eZwBjO9tF/vfWe1wjioWTKixVm8otPn38wQT3IKfxxn/t5Va/utpsNSg2ILWcttrNzdJgQ3+dpQRjEHs+9tE/zeXWt+gyILOamuTqlxrsOtPLub+7+emBsSq/88v5wL7oqHQ9H9nmbkF2RbUF1rev7lJEuziuU3i/90ddcB4UZsoJC62ifyvK7R4QJYFrcUGrmUZ5v9hYb9hosh/bzcDMN42VRgeF9W5hv8bi/XdSbagKtfs2c1NEvCIPbaQ/7+/pwkYn17Ki0hR24T/l2eZPCfJgsZ83dCiNOP/yCnn7iau/8G+5mD8aBsHSoqqyNL9X5erHUm0BcVpRm9ubhZHMoTh/4eDzP/DA23+RwTZ/P96hAlF7t5Wof8FyfpvibKgNk8noyDZ4D9quofg1Bjr/1kJlhjiIF+Upmn/r83RzCJoQXaC3qcbm8SwGMLwvybP/H8jMGlik7u7VeB/Zqz2J7wWVGdr1uTG62J1PQgfWST1/+hiCaxyIF8UJqv9r8hQrcVpQVqkzrcbG0WwGvB2H/P/lnx5MAaxsam5vYn3f2KY+jesFpSlqfZnxWjidP2OGWL/g/0swBjExu4Lhv958Ur/i5KU+lEsCA1lYI4JUv95bZ0gTo2Pt3P+z0myBmMQG5e6mxu4/kf4Kf8EmQm3oCRNebKrvSawIGPBqRG9sMOp5hjjfwdrlf/58bKT4RaUpWvtcLZV/39iscD/H0AFP46jYwYiMeP/44u4/9tbKQODSXUH3II9G7v18hI0n8YGKv+IDVT6joxj/BVx4mgcOCde/SnITPRUJAHEGlTCEkQV19TAAN8FC67hZdFXAAAAAElFTkSuQmCC');
+  border-color: #ed5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\0000399}}
+.messages--error,
+.error.messages--status,
+.error.messages--warning,
+.error.messages--error,
+.error.messages {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACpElEQVR42rWWTUgbQRiGQ0Tx4MWDeFM8eBA9iKAoggiCoCiiIiL4L3oQV1CJB0UEf6iRYFpK7UniTw9VSqL2kvQsVDBpSZrtRo35czVNW3oprRf17exSl4yzu1ikAy9h59vvedhkMrMGAGoxknAk2w8MJ/WosXThiZkZt9jdLeglPjn5ATc3mhJNuNjbK0QbG3ExMICL/n6IfX0gcxB7ekDAELu6IHZ2IlJbi1hLS1BLogmPtbUhMTv7oMSamzUlqnByMxLT0/8STQkDj9TV4ZLj5OysrODl8jIu5Gs68dFR7JG6dWkJ0fFx+TpSX89IDMnwcHU1yKec12Yz3rlc4HkeLwjkXJpPip3U3+7vIx6P4ymph4eG5PlwTQ0lMdytlmBxMWKtrXLeT0zA5XTibvj9fjxfXETkb/3N/Dz2dneVuiTZtliU/rPSUsQ5ziuxZYG03IIlJdKKUPJjdRUAKMmzuTnskB/VYbdTtd9HR4g2NCi9Z2VliDY1BSnBaUEBzsrLqXyzWCiQ9HU5HA4afniIUFWV0hOqqMBpURErOM7NxWlhIZOvCwvA7S3Uxq+DA5AnZ3pO8vJYQSArC8c5Oeqx2Rj4udeLQH6+6v2B7GxW8DkjA0JmJpONwUHY7XZGIAgCzCYTeJUewmIFfqMRfEoKlQ2yJbza2oLWcLvdeDI2hk/3+iQWKzAYkJzNjg5srq9TwJ9OJ76YTNScx+ORJT66X1/grKyEbW2NgfPp6XKd/JMZySrHaQsSU1Oe+0/w3WpVgyu5HBlR6lc+H8gioevDwz6JrWwV5+3txyoSFk5DcOX1MnCyJ4Vwfb1zt1UY9SR8aioDpuppaVpwZbPTl+hHF04dOKzk8XBF8DgJC3/woU/W/EciOtELOWi8DDwp//215Q+p7kiKh2lQSAAAAABJRU5ErkJggg==');
+  border-color: #ed541d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003106}}
+.messages__list {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003109}}
+.messages__item {
+  list-style-image: none;
+}
+
+/* Core/module installation error messages. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003115}}
+.messages--error p.error,
+.error.messages--status p.error,
+.error.messages--warning p.error,
+.error.messages--error p.error,
+.error.messages p.error {
+  color: #333;
+}
+
+/* System status report. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003121}}
+.ok,
+.messages--status,
+.status.messages--status,
+.status.messages,
+.status.messages--warning,
+.status.messages--error {
+  background-color: #f8fff0;
+  color: #234600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003126}}
+.warning,
+.messages--warning,
+.warning.messages--status,
+.warning.messages--warning,
+.warning.messages,
+.warning.messages--error {
+  background-color: #fffce5;
+  color: #840;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003131}}
+.error,
+.messages--error,
+.error.messages--status,
+.error.messages--warning,
+.error.messages--error,
+.error.messages {
+  background-color: #fef5f1;
+  color: #8c2e0b;
+}
+
+/**
+ * Tabs.
+ */
+/* Basic positioning styles shared by primary and secondary tabs. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003141}}
+.tabs-primary, .tabs-secondary {
+  overflow: hidden;
+  list-style: none;
+  white-space: nowrap;
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003147}}
+.tabs-primary a, .tabs-secondary a {
+  margin: 0;
+  text-indent: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003152}}
+.tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
+.tabs-secondary__tab.is-active {
+  margin-left: 12.5px;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003156}}
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
+  display: block;
+  line-height: 1.69231em;
+  text-decoration: none;
+}
+
+/* Primary tabs. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003166}}
+.tabs-primary__tab, .tabs-primary__tab.is-active {
+  text-shadow: 1px 1px 0 white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003175}}
+a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  color: #333;
+  background-color: #dedede;
+  letter-spacing: 1px;
+  padding: 0 1em;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003185}}
+a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
+  background-color: #e9e9e9;
+  border-color: #f2f2f2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003189}}
+a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
+  background-color: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, rgba(233, 233, 233, 0)));
+  background-image: -webkit-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
+  background-image: -moz-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
+  background-image: -o-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
+  background-image: linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
+}
+
+/* Secondary tabs. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003212}}
+.tabs-secondary {
+  font-size: .9em;
+  /* Collapse bottom margin of ul.primary. */
+  margin-top: -1.69231em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003219}}
+.tabs-secondary__tab,
+.tabs-secondary__tab.is-active {
+  margin: 0.84615em 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003225}}
+a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  -ms-border-radius: 0.75em;
+  -o-border-radius: 0.75em;
+  border-radius: 0.75em;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  text-shadow: 1px 1px 0 white;
+  background-color: #f2f2f2;
+  color: #666;
+  padding: 0 .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003234}}
+a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
+  background-color: #dedede;
+  border-color: #999;
+  color: #333;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003239}}
+a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
+  text-shadow: 1px 1px 0 #333333;
+  background-color: #666;
+  border-color: #000;
+  color: #fff;
+}
+
+/**
+ * Inline styles.
+ */
+/* List of links generated by theme_links(). */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003268}}
+.inline.links {
+  display: inline;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003272}}
+.inline.links a {
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003276}}
+.inline.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 1em 0 0;
+}
+
+/* The inline field label used by the Fences module. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003284}}
+span.field-label {
+  padding: 0 1em 0 0;
+}
+
+/**
+ * "More" links.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003291}}
+.more-link {
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003294}}
+.more-help-link {
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003297}}
+.more-help-link a {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  padding: 1px 0 1px 20px;
+}
+
+/**
+ * Pager.
+ */
+/* A list of page numbers when more than 1 page of content is available. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003309}}
+.pager-item,
+.pager-first,
+.pager-previous,
+.pager-next,
+.pager-last,
+.pager-ellipsis, .pager-current {
+  display: inline;
+  padding: 0.5em;
+  list-style-type: none;
+  background-image: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003321}}
+.pager-item,
+.pager-first,
+.pager-previous,
+.pager-next,
+.pager-last,
+.pager-ellipsis {
+  /* A concatenation of several list items using an ellipsis. */
+}
+
+/* The current page's list item. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003326}}
+.pager-current {
+  font-weight: bold;
+}
+
+@media all and (max-width: 719px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003335}}
+  #content .pager {
+    text-align: center;
+  }
+}
+@media all and (min-width: 720px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003341}}
+  #content .pager {
+    text-align: right;
+  }
+}
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003346}}
+  #content .pager-top {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003349}}
+  #content .pager {
+    text-align: right;
+  }
+}
+
+/**
+ * Blocks.
+ */
+/* Block wrapper. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003360}}
+.block {
+  margin-bottom: 1.69231em;
+}
+
+/**
+ * Marker.
+ */
+/* The "new" or "updated" marker. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003370}}
+.new,
+.update {
+  color: #c00;
+  /* Remove background highlighting from <mark> in normalize. */
+  background-color: transparent;
+}
+
+/**
+ * Unpublished note.
+ */
+/* The word "Unpublished" displayed underneath the content. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003381}}
+.unpublished {
+  height: 0;
+  overflow: visible;
+  /* Remove background highlighting from <mark> in normalize. */
+  background-color: transparent;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  /* A very nice CSS3 property. */
+  word-wrap: break-word;
+}
+
+/**
+ * Comments.
+ */
+/* Wrapper for the list of comments and its title. */
+/* Preview of the comment before submitting new or updated comment. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003404}}
+.comment-preview {
+  /* Drupal core will use a #ffffea background. See #1110842. */
+  background-color: #ffffea;
+}
+
+/* Wrapper for a single comment. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003411}}
+.comment .user-picture {
+  float: left;
+  margin-right: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003414}}
+.comment .user-picture img {
+  max-height: 5.07692em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003418}}
+.comment .permalink {
+  text-transform: uppercase;
+  font-size: 75%;
+}
+
+/* Nested comments are indented. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003425}}
+.indented {
+  /* Drupal core uses a 25px left margin. */
+  margin-left: 25px;
+}
+
+/**
+ * Forms.
+ */
+/* Wrapper for a form element (or group of form elements) and its label. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003436}}
+.form-item {
+  margin: 1.69231em 0;
+  /* Pack groups of checkboxes and radio buttons closer together. */
+  /* Form items in a table. */
+  /* Highlight the form elements that caused a form submission error. */
+  /* The descriptive help text (separate from the label). */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003441}}
+.form-checkboxes .form-item, .form-radios .form-item {
+  /* Drupal core uses "0.4em 0". */
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003448}}
+tr.odd .form-item, tr.even .form-item {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003455}}
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #c00;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003460}}
+.form-item .description {
+  font-size: 0.85em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003467}}
+.form-type-radio .description,
+.form-type-checkbox .description {
+  margin-left: 2.4em;
+}
+
+/* The part of the label that indicates a required field. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003473}}
+.form-required {
+  color: #c00;
+}
+
+/* Labels for radios and checkboxes. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003478}}
+label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+/* Buttons used by contrib modules like Media. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003484}}
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/* Password confirmation. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003490}}
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+/* Drupal's default login form block. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003495}}
+#user-login-form {
+  text-align: left;
+}
+
+/**
+ * OpenID
+ *
+ * The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+/* OpenID creates a new ul above the login form's links. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003507}}
+.openid-links {
+  /* Position OpenID's ul next to the rest of the links. */
+  margin-bottom: 0;
+}
+
+/* The "Log in using OpenID" and "Cancel OpenID login" links. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003514}}
+.openid-link,
+.user-link {
+  margin-top: 1.69231em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003518}}
+html.js #user-login-form li.openid-link,
+#user-login-form li.openid-link {
+  /* Un-do some of the padding on the ul list. */
+  margin-left: -20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003522}}
+#user-login ul {
+  margin: 1.69231em 0;
+}
+
+/**
+ * Drupal admin tables.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003531}}
+form th {
+  text-align: left;
+  padding-right: 1em;
+  border-bottom: 3px solid #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003536}}
+form tbody {
+  border-top: 1px solid #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003539}}
+form table ul {
+  margin: 0;
+}
+
+/* Markup generated by theme_tablesort_indicator(). */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003544}}
+td.active {
+  background-color: #ddd;
+}
+
+/* Center checkboxes inside table cell. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003550}}
+td.checkbox,
+th.checkbox {
+  text-align: center;
+}
+
+/* Drupal core wrongly puts this in system.menus.css. Since we override that, add it back. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003555}}
+td.menu-disabled {
+  background: #ccc;
+}
+
+/**
+ * Autocomplete.
+ *
+ * @see autocomplete.js
+ */
+/* Suggestion list. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003566}}
+#autocomplete .selected {
+  background: #0072b9;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003571}}
+html.js input.form-autocomplete {
+  background-image: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003575}}
+.ui-autocomplete {
+  z-index: 10 !important;
+}
+
+/**
+ * Collapsible fieldsets.
+ *
+ * @see collapse.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003588}}
+html.js .collapsible .fieldset-legend {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
+  background-position: 5px 65%;
+  background-repeat: no-repeat;
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003594}}
+html.js .collapsed .fieldset-legend {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
+  background-position: 5px 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003598}}
+.fieldset-legend .summary {
+  color: #999;
+  font-size: 0.9em;
+  margin-left: 0.5em;
+}
+
+/**
+ * TableDrag behavior.
+ *
+ * @see tabledrag.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003610}}
+tr.drag {
+  background-color: #fffff0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003613}}
+tr.drag-previous {
+  background-color: #ffd;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003616}}
+.tabledrag-toggle-weight {
+  font-size: 0.9em;
+}
+
+/**
+ * TableSelect behavior.
+ *
+ * @see tableselect.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003625}}
+tr.selected td {
+  background: #ffc;
+}
+
+/**
+ * Progress bar.
+ *
+ * @see progress.js
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003634}}
+.progress {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003637}}
+.progress .bar {
+  background: #ccc;
+  border-color: #666;
+  margin: 0 0.2em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_misc\.scss}line{font-family:\00003643}}
+.progress .filled {
+  background-color: #0072b9;
+  background-image: url('../images/progress.gif?1480106783');
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\000031}}
+#header {
+  /* Wrapper for any blocks placed in the header region. */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\000035}}
+#header .header__region .block-menu {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\0000311}}
+#header .header__region .block-menu h3 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\0000315}}
+#header .header__region .block-menu li {
+  display: inline-block;
+  padding: 0 12.5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\0000319}}
+#header .header__region .block-menu li.first {
+  padding-left: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\0000322}}
+#header .header__region .block-menu li.last {
+  border-right: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\0000337}}
+#header .header__region #block-search-form * {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_header\.scss}line{font-family:\0000340}}
+#header .header__region #block-search-form h2 {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_rsc_cite\.scss}line{font-family:\000033}}
+#block-rsc-cite-short,
+.node-rsc-cite-short {
+  text-align: center;
+  padding: 1.69231em 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_rsc_cite\.scss}line{font-family:\000036}}
+#block-rsc-cite-short .field-name-rscc-body,
+.node-rsc-cite-short .field-name-rscc-body {
+  font-family: Copperplate, “Copperplate Gothic Light”;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1.17em;
+  line-height: 1.44642em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_rsc_cite\.scss}line{font-family:\000039}}
+#block-rsc-cite-short .field-name-rscc-author-authors,
+.node-rsc-cite-short .field-name-rscc-author-authors {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_rsc_cite\.scss}line{font-family:\0000312}}
+#block-rsc-cite-short .field-name-rscc-author-authors:before,
+.node-rsc-cite-short .field-name-rscc-author-authors:before {
+  content: "\0000A0 \002014 \0000A0";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/dolf\/rsc\/ij\/d7\/2014\/rsc2014\/sass\/components\/base\/_rsc_cite\.scss}line{font-family:\0000317}}
+#block-rsc-cite-short section,
+.node-rsc-cite-short section {
+  text-align: initial;
+}
