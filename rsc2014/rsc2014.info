@@ -154,3 +154,4 @@ breakpoints[t6] = (min-width: 720px)
 breakpoints[t8] = (min-width: 600px)
 breakpoints[t10] = (min-width: 0px)
 
+version = 7.x-2.x
