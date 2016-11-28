@@ -12,8 +12,6 @@
  */
 function rsc2014_css_alter(&$css) {
   // Remove css files which are hard to override. Use our own.
-  unset($css[drupal_get_path('module', 'nice_menus') . '/css/nice_menus_default.css']);
-  unset($css[drupal_get_path('module', 'nice_menus') . '/css/nice_menus.css']);
   unset($css[drupal_get_path('module', 'addtoany') . '/addtoany.css']);
 }
 
