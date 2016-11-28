@@ -5,9 +5,7 @@
   article.node-rsc-library-request,
   article.node-rsc-library-book-preview {
     
-    span.field-name-field-featured-image, // CL
-    span.field-image // RC TODO: shouldn't this be field-name-image ?
-    {
+    span.field-name-rscl-featured-image {
       a {
         border: 1px solid $bluegrey4;
         margin-top: -2px; // compensate for border

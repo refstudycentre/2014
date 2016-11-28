@@ -28,7 +28,7 @@ Drupal.behaviors.rsc2014_all = {
       var lineheight = 22; // hard not to hardcode
 
       // make the height of sidebar images a multiple of the line height by cropping it slightly using the surrounding a tag's height property
-      var a = $(".block-rsc-library article").find("span.field-featured-image, span.field-image").find("a");
+      var a = $(".block-rsc-library article").find("span.field-name-rscl-featured-image").find("a");
       $.each(a,function(){
         var img = $(this).find("img").first();
         var lines = (img.height() / lineheight >> 0); // integer division
